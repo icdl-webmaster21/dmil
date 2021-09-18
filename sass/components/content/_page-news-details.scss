@@ -1,0 +1,226 @@
+.news-details-content {
+  .single-news {
+    overflow: hidden;
+    border-radius: 30px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 25px 37px;
+
+    .single-date {
+      time {
+        font-size: 14px;
+        font-family: "Helvetica Neue" ,sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #11A69C;
+
+        .fas.fa-clock {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    h1 {
+      padding: 8px 0;
+      line-height: 1.6;
+      margin: 15px 0 0;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 82px;
+        height: 2px;
+        background: #11A69C;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &-content {
+      &-thumbnail {
+        max-width: 500px;
+        width: 100%;
+        margin: 27px 0;
+      }
+      font-size: 14px;
+      letter-spacing: 0.1rem;
+      line-height: 1.6;
+
+      h2 {
+        margin: 30px 0;
+        font-size: 22px;
+        font-weight: 600;
+        padding: 5px 0 5px 15px;
+        position: relative;
+
+        &:before {
+          content: "";
+          width: 4px;
+          height: 100%;
+          background: #11A69C;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      h3 {
+        margin: 32px 0;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 5px 0;
+        position: relative;
+
+        &:before {
+          content: "";
+          width: 100%;
+          height: 2px;
+          background: #11A69C;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      h4 {
+        margin: 25px 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #11A69C;
+      }
+
+      p {
+        margin: 25px 0;
+      }
+
+      ul {
+        background: #F6F7F9;
+        padding: 20px 15px;
+        box-sizing: border-box;
+
+        li {
+          font-size: 14px;
+          letter-spacing: 0.1rem;
+          line-height: 1.6;
+          padding-left: 15px;
+          position: relative;
+          margin: 8px 0;
+
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0 , -50%);
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #11A69C;
+          }
+        }
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      table {
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+    }
+
+    .post_links {
+      max-width: 520px;
+      width: 100%;
+      margin: 50px auto;
+      justify-content: space-between;
+
+      li {
+        width: 47%;
+
+        a {
+          border-radius: 60px;
+
+          &.single-post-prev {
+            &:after {
+              content: '';
+              -ms-transform: rotate(227deg);
+              -webkit-transform: rotate(227deg);
+              transform: rotate(227deg);
+              left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .news-list {
+    margin: 46px 0;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 35px 0 46px;
+
+    .page-ttl {
+      width: 90%;
+      margin: 0 auto 20px;
+      align-items: center;
+      justify-content: space-between;
+
+      .more-btn {
+        width: 164px;
+
+        a {
+          border-radius: 45px;
+        }
+      }
+    }
+
+    li {
+      width: 90%;
+      margin: auto;
+      padding: 8px 0;
+
+      .news-date {
+        font-size: 14px;
+        color: #999999;
+        width: 100px;
+        font-family: "Helvetica Neue" ,sans-serif;
+        font-weight: 500;
+        width: 100px;
+        line-height: 1.8;
+      }
+
+      .news-content {
+        width: calc(100% - 100px);
+
+        h2 {
+          font-family: 'ヒラギノ角ゴ ProN W6','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.6;
+        }
+
+        p {
+          font-family: 'ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-size: 12px;
+          line-height: 1.8;
+        }
+      }
+
+      &:hover {
+        .news-content {
+          h2 {
+            color: #11A69C;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

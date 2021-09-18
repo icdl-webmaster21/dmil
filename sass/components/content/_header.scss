@@ -1,0 +1,76 @@
+.l {
+  &-hd {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 5px 0 12px;
+    z-index: 1000;
+
+    &-inn {
+      width: 96%;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+
+      &-logo {
+        max-width: 156px;
+        width: 40%;
+        margin: 0;
+      }
+
+      &-profile {
+        max-width: 408px;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+
+        &-points {
+          width: 49%;
+
+          p {
+            background: #DAF2EF;
+
+            .points-ttl {
+              padding: 17px 5px;
+              background: #008180;
+              color: #fff;
+              font-size: 12px;
+              width: 45%;
+              box-sizing: border-box;
+              text-align: center;
+            }
+
+            .points-collection {
+              padding: 17px 5px;
+              box-sizing: border-box;
+              text-align: center;
+              width: 55%;
+            }
+          }
+        }
+
+        &-info {
+          align-items: center;
+
+          figure {
+            max-width: 60px;
+            margin-right: 10px;
+          }
+
+          &-txt {
+            h2 {
+              font-size: 16px;
+              margin-bottom: 8px;
+            }
+
+            h3 {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
