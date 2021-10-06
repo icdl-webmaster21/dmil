@@ -1,0 +1,203 @@
+.news-list-content {
+  .page-ttl {
+    align-items: center;
+    justify-content: space-between;
+
+    .more-btn {
+      width: 164px;
+
+      a {
+        border-radius: 45px;
+      }
+    }
+  }
+
+  .news-list {
+    margin: 15px 0 30px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px 0 16px;
+
+    li {
+      width: 96%;
+      margin: auto;
+      padding: 10px 25px;
+      box-sizing: border-box;
+
+      &.top-first-news {
+        background: #fff;
+        box-shadow: 0 0 20px rgba($color: #bcbcbc, $alpha: 0.3);
+        border-radius: 20px;
+      }
+
+      .news-date {
+        font-size: 14px;
+        color: #999999;
+        width: 100px;
+        font-family: "Helvetica Neue" ,sans-serif;
+        font-weight: 500;
+        width: 100px;
+        line-height: 1.8;
+      }
+
+      .news-content {
+        width: calc(100% - 100px);
+
+        h2 {
+          font-family: 'ヒラギノ角ゴ ProN W6','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.6;
+        }
+
+        p {
+          font-family: 'ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-size: 12px;
+          line-height: 1.8;
+          margin-top: 10px;
+        }
+      }
+
+      &:hover {
+        .news-content {
+          h2 {
+            color: #11A69C;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .message-box {
+    margin: 25px 0 0;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0 30px;
+
+    form {
+      justify-content: space-between;
+
+      .select-box {
+        width: 35%;
+
+        &-inn {
+          margin: 28px 0;
+          font-family: 'ヒラギノ角ゴ ProN W6','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-size: 12px;
+          position: relative;
+
+          input[type=checkbox] {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            margin: 0;
+          }
+
+          label {
+            box-sizing: border-box;
+            cursor: pointer;
+            display: inline-block;
+            padding: 3px 0 0 35px;
+            position: relative;
+            width: auto;
+            font-size: 14px;
+
+            &:before {
+              background: #fff;
+              content: '';
+              display: block;
+              width: 20px;
+              height: 20px;
+              left: 0;
+              position: absolute;
+              top: 0;
+              border-radius: 5px;
+              border: 1px solid #cccccc;
+              box-sizing: border-box;
+            }
+
+            &:after {
+              border-right: 2px solid #ffffff;
+              border-bottom: 2px solid #ffffff;
+              content: '';
+              display: block;
+              width: 5px;
+              height: 9px;
+              opacity: 0;
+              position: absolute;
+              top: 3px;
+              left: 6px;
+              transform: rotate(45deg);
+            }
+          }
+
+          input[type=checkbox]:checked + label::before {
+            background: #11a69c;
+            border: 1px solid #11a69c;
+          }
+
+          input[type=checkbox]:checked + label::after {
+            opacity: 1;
+          }
+        }
+      }
+
+      .input-box-aera {
+        width: 62%;
+        margin: 15px 0;
+
+        textarea {
+          width: 100%;
+          padding: 13px 15px 26px;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          border: 1px solid #EBEBEB;
+          border-radius: 30px;
+          overflow: hidden;
+          resize: none;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            font-size: 12px;
+            color: #999999;
+          }
+        }
+
+        .submit-area {
+          justify-content: flex-end;
+          align-items: center;
+          margin-top: 15px;
+          margin-right: 10px;
+
+          p {
+            font-size: 12px;
+            margin-right: 13px;
+          }
+
+          .submit-area-btn {
+            width: 120px;
+
+            button {
+              width: 100%;
+              border-radius: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

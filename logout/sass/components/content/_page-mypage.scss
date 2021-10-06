@@ -1,0 +1,449 @@
+.register-content {
+  .mypage{
+    &-wrap {
+      width: 96%;
+      margin: 40px 0 0;
+      justify-content: space-between;
+      align-items: center;
+      &-list{
+        max-width: 680px;
+        width: calc(100% - 90px);
+        margin: 0;
+        ul{
+          li{
+            width: 23%;
+            font-size: 14px;
+            font-weight: 600;
+            color: #11A69C;
+            text-align: center;
+            padding: 10px 2px;
+            box-sizing: border-box;
+            border: 2px solid #11A69C;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-right: 2%;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover,&.active{
+              color: #fff;
+              background: #11A69C;
+            }
+            &.creditCard-infornation{
+              width: 25%;
+              padding: 10px 5px;
+            }
+          }
+        }
+      }
+      &-logout{
+        a{
+          font-size: 12px;
+          font-weight: 600;
+           color: #11A69C;
+          }
+
+      }
+    }
+    &-personal-payment{
+      padding: 30px 25px 55px;
+      overflow: hidden;
+      border-radius: 30px;
+      background: #fff;
+      box-sizing: border-box;
+      margin: 30px 0;
+      table{
+        width: 100%;
+        thead{
+          background: #F6F7F9;
+          th{
+            font-size: 14px;
+            text-align: center;
+            padding: 12px;
+            &:first-child{
+              overflow: hidden;
+              border-top-left-radius: 15px;
+              border-bottom-left-radius: 15px;
+            }
+            &:last-child{
+              overflow: hidden;
+              border-top-right-radius: 15px;
+              border-bottom-right-radius: 15px;
+            }
+          }
+        }
+        tbody{
+          td{
+            font-size: 14px;
+            text-align: center;
+            padding: 30px 12px;
+            border-bottom: 1px solid #EBEBEB;
+            .unpaid{
+              font-weight: bold;
+              color: #11A69C;
+            }
+            a{
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-personal-card{
+      padding: 30px 25px 55px;
+      overflow: hidden;
+      border-radius: 30px;
+      background: #fff;
+      box-sizing: border-box;
+      margin: 30px 0;
+      h3{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &-txt{
+        p{
+          span{
+            display: block;
+            font-size: 14px;
+            margin-top: 10px;
+          }
+        }
+        .more-btn02{
+          max-width: 100px;
+          margin:30px 0 0;
+          text-align: left;
+          a{
+            border-radius: 10px;
+            &:after{
+              content: none;
+            }
+          }
+        }
+      }
+      &.mypage-personal-cardEdit{
+         input{
+             display: block;
+                width: 100%;
+                margin: 20px 0;
+                border-radius: 10px;
+                padding: 12px 22px;
+                border: 2px solid #F6F7F9;
+                box-sizing: border-box;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                font-size: 16px;
+
+                &:focus {
+                  outline: none;
+                }
+         }
+         .select-area {
+            display: inline-block;
+            position: relative;
+            width: 48%;
+            select {
+              display: inline-block;
+              width: 100%;
+              appearance: none;
+              -moz-appearance: none;
+              -webkit-appearance: none;
+              border-radius: 10px;
+              padding: 13.5px 22px;
+              border: 2px solid #F6F7F9;
+              box-sizing: border-box;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            &:after {
+              content: '';
+              width: 6px;
+              height: 6px;
+              border: 0;
+              border-top: solid 1px #000;
+              border-right: solid 1px #000;
+              -ms-transform: rotate(135deg);
+              -webkit-transform: rotate(135deg);
+              transform: rotate(135deg);
+              position: absolute;
+              top: 50%;
+              right: 15px;
+              margin-top: -6px;
+            }
+        }
+        .submit-area-btn{
+            text-align: left;
+            button{
+                width: 100px;
+                margin: 0;
+                border-radius: 10px;
+            }
+        }
+        .addcard-date{
+            justify-content: space-between;
+        }
+        .oldCard-edit{
+            width: 265px;
+            padding-right: 50px;
+            margin-right: 50px;
+            border-right: 1px solid #EBEBEB;
+        }
+      }
+    }
+    &-personal-points{
+      padding: 30px 25px 55px;
+      overflow: hidden;
+      border-radius: 30px;
+      background: #fff;
+      box-sizing: border-box;
+      margin: 30px 0;
+      h3{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      h4{
+        font-size: 16px;
+        font-weight: bold;
+        margin: 8px 32px 15px;
+
+        span{
+          font-size: 26px;
+          color: #11A69C;
+          font-family: "Helvetica Neue";
+        }
+      }
+      table{
+        width: 100%;
+        thead{
+          background: #F6F7F9;
+          th{
+            font-size: 14px;
+            text-align: center;
+            padding: 12px;
+            &:first-child{
+              overflow: hidden;
+              border-top-left-radius: 15px;
+              border-bottom-left-radius: 15px;
+            }
+            &:last-child{
+              overflow: hidden;
+              border-top-right-radius: 15px;
+              border-bottom-right-radius: 15px;
+            }
+          }
+        }
+        tbody{
+          td{
+            font-size: 14px;
+            text-align: center;
+            padding: 30px 12px;
+            border-bottom: 1px solid #EBEBEB;
+            .unpaid{
+              font-weight: bold;
+              color: #11A69C;
+            }
+            a{
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-finished.modal-finished-profile {
+  .finished-dialog-box {
+    .more-btn{
+      a{
+        &:hover{
+          #refresh_path{
+            transition: 0.5s;
+            fill : #fff;
+          }
+        }
+        svg{
+          max-width: 18px;
+          margin-bottom: -4px;
+        }
+      }
+    }
+  }
+}
+
+.modal-logout {
+  position: relative;
+  height: calc(100vh - 125.92px);
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000066;
+    z-index: 999;
+  }
+
+  .logout-dialog-box {
+    position: absolute;
+    top: 118px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #fff;
+    z-index: 1000;
+    overflow: hidden;
+    border-radius: 30px;
+    max-width: 500px;
+    width: 80%;
+    margin: auto;
+    padding: 47px 80px;
+    text-align: center;
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 30px 0;
+    }
+    .more-fl{
+        justify-content: space-between;
+        .more-btn {
+          width: 48%;
+          a {
+            border-radius: 10px;
+            letter-spacing: 0.12rem;
+
+            &:after {
+              content: none;
+            }
+          }
+        }
+    }
+  }
+}
+.mypage-plan{
+    .register-content {
+      .register-infornation {
+        form {
+            .register-container-inn{
+                dl{
+                    dd{
+                        p{
+                            width: 200px;
+                            border-radius: 10px;
+                            padding: 15px;
+                            border: 2px solid #F6F7F9;
+                         }
+                    }
+                }
+            }
+            .submit-area-btn{
+                text-align: left;
+                button{
+                  background: #11A69C;
+                  color: #fff;
+                  border-radius: 12px;
+                  width: 150px;
+                  &:hover{
+                    background: #11A69C;
+                    color: #fff;
+                  }
+                }
+            }
+        }
+      }
+    }
+    &.mypage-plan-change{
+        .mypage-plan{
+            overflow: hidden;
+            border-radius: 30px;
+            background: #fff;
+            box-sizing: border-box;
+            margin: 30px 0;
+            h2{
+                font-size: 16px;
+                padding: 24px 25px;
+                text-align:left;
+                background: #11a69c;
+                color: #fff;
+                font-weight: 600;
+            }
+            &-inn{
+                margin: 20px;
+                padding-bottom: 24px;
+                border-bottom: 1px solid #707070;
+                p{
+                    font-size: 14px;
+                    font-weight: 600;
+                    .entry-fee{
+                        margin-right: 20px;
+                    }
+                    strong{
+                        font-size: 26px;
+                        color: #008C8D;
+                    }
+                    small{
+                        font-size: 12px;
+                    }
+                }
+                h3{
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-top: 22px;
+                }
+                ul{
+                    justify-content: space-between;
+                    max-width: 420px;
+                    li{
+                        width: 44%;
+                        font-size: 12px;
+                        margin: 10px 0 0;
+                        &:nth-child(2n){
+                            width: 49%;
+                        }
+                    }
+                }
+            }
+            .submit-area{
+                justify-content: space-between;
+                margin: 21px 20px 31px;
+                align-items: center;
+                input{
+                    position: relative;
+                    top: 2px;
+                }
+                lable{
+                    font-size: 14px;
+                    
+                }
+                a{
+                   text-decoration:underline;
+                }
+                .check-required{
+                        top: -5px;
+                        right: -5px;
+                        position: relative;
+                        color: #f00;
+                        
+                    }
+            }
+            .submit-area-btn{
+                text-align: left;
+                button{
+                    margin: 0;
+                    width: 150px;
+                    border-radius: 10px;
+                }
+              }
+        }
+    }
+}
