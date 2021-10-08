@@ -18,17 +18,23 @@ body {
     word-wrap: break-word;
     overflow-wrap: break-word;
     font-variant-ligatures: none;
-    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+    font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+    font-size: 15px;
     font-weight: 500;
     font-style: normal;
-    background: #F6F7F9;
-    line-height: 1.6;
-    letter-spacing: 0.15rem;
+    line-height: 1;
+    letter-spacing: 0.05rem;
 }
 a,a:hover {
     text-decoration: none;
     color: #231815;
     transition: 0.5s;
+    -webkit-transition-property: background-color, color;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease;
+    transition-property: background-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
 }
 
 img {
@@ -69,28 +75,8 @@ img {
         display:none;
     }
 }
-
-.site-main{
-  .cd-content-wrapper{
-    padding: 37px 50px 20px;
-    overflow: hidden;
-    margin-left: 260px;
-    margin-top: 99.9219px;
-  }
-}
-.cd-siteMap.breadcrumbs{
-    font-size: 10px;
-    color: #999999;
-    margin: 20px auto;
-  a{
-    color: #999999;
-    &:hover{
-      text-decoration: underline;
-    }
-  }
-  span.breadcrumbs-label{
-    padding: 10px;
-  }
+.cd-content-wrapper{
+  margin-top: 110px;
 }
 .page-ttl{
   font-size: 24px;
@@ -183,33 +169,6 @@ img {
         color: #11A69C;
 
       }
-    }
-  }
-}
-
-.pagination-pagenavi {
-  padding: 30px 0;
-  text-align: center;
-  a,span {
-    display: inline-block;
-    text-decoration: none;
-    padding: 8px;
-    margin: 2px;
-    font-size: 14px;
-    font-family: "Manrope-SemiBold" ,sans-serif;
-    &.current,
-    &:hover {
-        color: #11A69C;
-        font-size: 14px;
-     &.previouspostslink,&.nextpostslink{
-       background: #fff;
-       border-radius: 50%;
-        svg{
-            #next{
-              fill: #000 !important;
-            }
-          }
-     }
     }
   }
 }

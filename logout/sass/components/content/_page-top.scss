@@ -1,0 +1,501 @@
+.main-content{
+  max-width: 1180px;
+  width: 90%;
+  margin: 0 auto 150px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "游ゴシック体" , sans-serif;
+  @include mqSp(){
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto 50px;
+  }
+}
+.main-content-area {
+    width: calc(100% - 300px);
+    @include mqSp(){
+      width: 100%;
+    }
+    &-inn{
+      width: 90%;
+      margin: 0;
+      padding: 0;
+      @include mqSp(){
+        width: 100%;
+      }
+      .area-ttl{
+        font-size: 22px;
+        border-top: 2px solid #222222;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        font-weight: bold;
+        background: #FAFAFA;
+        box-shadow: 0px 1px 0px 0px #d1cdcd6e;
+        @include mqSp(){
+          font-size: 18px;
+          padding: 20px 15px;
+        }
+      }
+      .area-txt{
+        margin: 40px 0;
+        @include mqSp(){
+          margin: 30px 0;
+        }
+        p{
+          line-height: 1.8;
+          font-size: 16px;
+        }
+        .araa-plan-list{
+          margin: 40px;
+          @media(max-width: 630px){
+            max-width: 240px;
+            width: 80%;
+            margin: 30px auto 50px;
+          }
+          li{
+            width: 240px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #F6F7F9;
+            position: relative;
+            @media(max-width: 630px){
+              width: 100%;
+              margin: 0 0 20px;
+            }
+            h3{
+              font-size: 18px;
+              text-align: center;
+              background: #000;
+              color: #fff;
+              padding: 26px;
+              box-sizing: border-box;
+            }
+            .price{
+              padding: 25px 30px;
+              p{
+                font-size: 14px;
+                font-weight: bold;
+                letter-spacing: 0.05rem;
+                position: relative;
+                justify-content: space-between;
+                align-items: baseline;
+                strong{
+                  font-size: 26px;
+                  font-family: 'Shippori Mincho', serif;
+                  font-weight: bold;
+                }
+                small{
+                  font-size: 12px;
+                }
+              }
+            }
+            .area-more-info{
+              width: 90%;
+              margin: auto;
+              border-top: 1px solid #707070;
+              padding: 23px 0 112px;
+              h4{
+                font-size: 12px;
+                font-weight: bold;
+              }
+              p.info-list{
+                font-size: 12px;
+                line-height: 2.5;
+                margin-top: 10px;
+              }
+            }
+            .link-btn{
+              position: absolute;
+              width: 100%;
+              left: 0;
+              bottom: 25px;
+              text-align: center;
+              a{
+                display: inline-block;
+                width: 90%;
+                margin: auto;
+                padding: 15px;
+                background: #F6F7F9;
+                border: 1px solid #2D2D2D;
+                border-radius: 45px;
+                font-size: 12px;
+                font-weight: bold;
+                position: relative;
+                &:after{
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  bottom: .1em;
+                  right: 27px;
+                  margin: auto;
+                  width: .3em;
+                  height: .3em;
+                  border-top: .05em solid #2D2D2D;
+                  border-right: .05em solid #2D2D2D;
+                  transform: rotate(45deg);
+                }
+                &:hover{
+                  color: #fff;
+                  background: #2D2D2D;
+                  &:after{
+                    border-top: .05em solid #fff;
+                    border-right: .05em solid #fff;
+                  }
+                }
+              }
+            }
+            &.paid-plan{
+              margin-left: 30px;
+              @media(max-width: 630px){
+                margin: 20px 0 0;
+              }
+              h3{
+                background: #008C8D;
+              }
+              .price{
+                p{
+                  strong{
+                    color: #008C8D;
+                  }
+                }
+              }
+              .link-btn{
+                a{
+                  border: 1px solid #008C8D;
+                  background: #008C8D;
+                  color: #fff;
+                  &:after{
+                    border-top: .05em solid #fff;
+                    border-right: .05em solid #fff;
+                  }
+                  &:hover{
+                    background: #fff;
+                    color: #008C8D;
+                    &:after{
+                      border-top: .05em solid #008C8D;
+                      border-right: .05em solid #008C8D;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .araa-plan-table{
+          margin: 40px auto;
+          @include mqSp(){
+            overflow: auto;
+            img{
+              width: 600px;
+            }
+          }
+        }
+        // .araa-plan-table{
+        //   margin: 40px auto;
+        //   thead{
+        //     th{
+        //       font-size: 18px;
+        //       font-weight: bold;
+        //       padding: 15px;
+        //       &.free-plan{
+        //         background: #F6F7F9;
+        //         border-top-right-radius: 10px;
+        //         border-top-left-radius: 10px;
+        //         .price{
+        //           p{
+        //             strong{
+        //               color: #008C8D;
+        //             }
+        //           }
+        //         }
+        //       }
+        //       &.paid-plan{
+        //         background: #008c8d1a;
+        //         border-top-right-radius: 10px;
+        //         border-top-left-radius: 10px;
+        //         .price{
+        //           p{
+        //             strong{
+        //               color: #008C8D;
+        //             }
+        //           }
+        //         }
+        //       }
+        //     }
+        //   }
+        //   tbody{
+        //     td{
+        //       font-size: 14px;
+        //       font-weight: bold;
+        //       vertical-align: top;
+        //       text-align: center;
+        //       padding: 15px;
+        //       width: 200px;
+        //       .price{
+        //         padding: 25px 30px;
+        //         p{
+        //           font-size: 14px;
+        //           font-weight: bold;
+        //           letter-spacing: 0.05rem;
+        //           position: relative;
+        //           justify-content: space-between;
+        //           align-items: baseline;
+        //           strong{
+        //             font-size: 26px;
+        //             font-family: 'Shippori Mincho', serif;
+        //             font-weight: bold;
+        //           }
+        //           small{
+        //             font-size: 12px;
+        //           }
+        //         }
+        //       }
+        //       img{
+        //         &.maru{
+        //           max-width: 30px;
+        //         }
+        //         &.batu{
+        //           max-width: 15px;
+        //         }
+        //       }
+        //       &.free-plan{
+        //         background: #F6F7F9;
+        //         &.last-table{
+        //           border-bottom-right-radius: 10px;
+        //           border-bottom-left-radius: 10px;
+        //         }
+        //         .price{
+        //           p{
+        //             strong{
+        //               color: #008C8D;
+        //             }
+        //           }
+        //         }
+        //       }
+        //       &.paid-plan{
+        //         background: #008c8d1a;
+        //         &.last-table{
+        //           border-bottom-right-radius: 10px;
+        //           border-bottom-left-radius: 10px;
+        //         }
+        //         .price{
+        //           p{
+        //             strong{
+        //               color: #008C8D;
+        //             }
+        //           }
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
+        .area-plan-link {
+          max-width: 500px;
+          width: 90%;
+          margin: 30px auto;
+          justify-content: space-between;
+          >div{
+            width: 46%;
+            text-align: center;
+            a{
+              display: inline-block;
+              width: 100%;
+              margin: auto;
+              padding: 15px;
+              background: #F6F7F9;
+              font-size: 12px;
+              font-weight: bold;
+              position: relative;
+              &:after{
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: .1em;
+                right: 27px;
+                margin: auto;
+                width: .3em;
+                height: .3em;
+                border-top: .05em solid #2D2D2D;
+                border-right: .05em solid #2D2D2D;
+                transform: rotate(45deg);
+              }
+              &:hover{
+                color: #fff;
+                background: #2D2D2D;
+                &:after{
+                  border-top: .05em solid #fff;
+                  border-right: .05em solid #fff;
+                }
+              }
+            }
+            &.plan-link-paid{
+              a{
+                background: #008C8D;
+                color: #fff;
+                &:after{
+                  border-top: .05em solid #fff;
+                  border-right: .05em solid #fff;
+                }
+                &:hover{
+                  background: #fff;
+                  color: #008C8D;
+                  &:after{
+                    border-top: .05em solid #008C8D;
+                    border-right: .05em solid #008C8D;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .area-02{
+        .card-lists{
+          max-width: 590px;
+          width: 90%;
+          margin: 56px auto 0;
+          margin-left: 5%;
+          @include mqSsp(){
+            width: 100%;
+            margin: 56px auto 0;
+          }
+          h3{
+            font-size: 18px;
+            font-weight: bold;
+          }
+          .card-lists-fl{
+            @include mqSsp(){
+              justify-content: center;
+            }
+            li{
+              width: 86px;
+              margin: 30px 0 0;
+              margin-right: 40px;
+              @include mqSsp(){
+                width: 25.33%;
+                margin: 4%;
+              }
+              &:last-child{
+                margin-right: 0;
+                @include mqSsp(){
+                  width: 29.33%;
+                  margin: 2%;
+                }
+              }
+            }
+          }
+        }
+      }
+      .area-03{
+        .area-txt {
+          margin: 50px 0 0;
+          margin-left: 40px;
+          @include mqSp(){
+            width: auto;
+            margin: 50px auto 0;
+            overflow: hidden;
+            figure{
+              overflow: auto;
+              img{
+                width: 700px;
+              }
+            }
+          }
+          .area-plan-link {
+            max-width: 500px;
+            width: 90%;
+            margin: 30px 0;
+            margin-left: 5%;
+            justify-content: space-between;
+            >div{
+              width: 46%;
+              text-align: center;
+              @include mqSp(){
+                max-width: 212px;
+                width: 70%;
+                margin: 15px auto;
+              }
+              a{
+                display: inline-block;
+                width: 100%;
+                margin: auto;
+                padding: 15px;
+                background: #F6F7F9;
+                border: 1px solid #2D2D2D;
+                border-radius: 45px;
+                font-size: 12px;
+                font-weight: bold;
+                position: relative;
+                &:after{
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  bottom: .1em;
+                  right: 27px;
+                  margin: auto;
+                  width: .3em;
+                  height: .3em;
+                  border-top: .05em solid #2D2D2D;
+                  border-right: .05em solid #2D2D2D;
+                  transform: rotate(45deg);
+                }
+                &:hover{
+                  color: #fff;
+                  background: #2D2D2D;
+                  &:after{
+                    border-top: .05em solid #fff;
+                    border-right: .05em solid #fff;
+                  }
+                }
+              }
+              &.plan-link-paid{
+                a{
+                  border: 1px solid #008C8D;
+                  background: #008C8D;
+                  color: #fff;
+                  &:after{
+                    border-top: .05em solid #fff;
+                    border-right: .05em solid #fff;
+                  }
+                  &:hover{
+                    background: #fff;
+                    color: #008C8D;
+                    &:after{
+                      border-top: .05em solid #008C8D;
+                      border-right: .05em solid #008C8D;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.entry-plan-02{
+        .area-03 .area-txt .area-plan-link{
+          margin: 30px auto;
+          a{
+            border-radius: 0px;
+            border: 1px solid #F6F7F9;
+          }
+        }
+        .area-03{
+          .area-txt {
+            figure{
+              overflow: hidden;
+              img{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+#side_col {
+    width: 300px;
+    @include mqSp(){
+      width: 100%;
+    }
+}

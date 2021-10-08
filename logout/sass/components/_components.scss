@@ -7,13 +7,9 @@
 // navigation
 @import 'content/navigation';
 
-// news
-@import 'content/page-news-list';
-@import 'content/page-news-details';
-@import 'content/page-lecture';
-@import 'content/page-journal';
+// navigation
+@import 'content/wp-css';
+@import 'content/wp-responsive';
+@import 'content/page-top';
 @import 'content/page-register';
-@import 'content/page-login';
-@import 'content/page-mypage';
-@import 'content/page-director';
-@import 'content/page-pp';
+@import 'content/page-privacy-policy';

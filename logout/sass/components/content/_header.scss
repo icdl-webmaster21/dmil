@@ -1,75 +1,132 @@
-.l {
-  &-hd {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #fff;
-    z-index: 1000;
-
-    &-inn {
-      width: 96%;
-      margin: auto;
-      justify-content: space-between;
-      align-items: center;
-      padding: 5px 0 12px;
-      &-logo {
-        max-width: 156px;
-        width: 40%;
-        margin: 0;
-      }
-
-      &-profile {
-        max-width: 408px;
-        width: 60%;
-        justify-content: space-between;
-        align-items: center;
-
-        &-points {
-          width: 49%;
-
-          p {
-            background: #DAF2EF;
-
-            .points-ttl {
-              padding: 17px 5px;
-              background: #008180;
-              color: #fff;
-              font-size: 12px;
-              width: 45%;
-              box-sizing: border-box;
-              text-align: center;
-            }
-
-            .points-collection {
-              padding: 17px 5px;
-              box-sizing: border-box;
-              text-align: center;
-              width: 55%;
-            }
-          }
-        }
-
-        &-info {
-          align-items: center;
-
-          figure {
-            max-width: 60px;
-            margin-right: 10px;
-          }
-
-          &-txt {
-            h2 {
-              font-size: 16px;
-              margin-bottom: 8px;
-            }
-
-            h3 {
-              font-size: 12px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// .l-hd{
+//   margin: auto;
+//   width: 100%;
+//   position: fixed;
+//   z-index: 20;
+//   margin: auto;
+//   background: #fff;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+//   #header_inner{
+//     width: 90%;
+//     margin: 20px auto;
+//     justify-content: space-between;
+//     align-items: center;
+//     .logo{
+//       width: 125px;
+//       margin: auto;
+//     }
+//     #global_menu{
+//       max-width: 620px;
+//       width: calc(100% - 200px);
+//       margin: 0;
+//       .menu{
+//         justify-content: space-between;
+//         align-items: center;
+//         li{
+//           position: relative;
+//           font-weight: bold;
+//           a{
+//             font-size: 15.5px;
+//             text-decoration: none;
+//             display: block;
+//             -webkit-box-sizing: border-box;
+//             box-sizing: border-box;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// #page_header {
+//     width: 100%;
+//     min-width: 1180px;
+//     height: 450px;
+//     position: relative;
+// }
+// #page_header_overlay {
+//     width: 100%;
+//     min-width: 1180px;
+//     height: 100%;
+//     position: absolute;
+//     top: 0px;
+//     left: 0px;
+//     z-index: 2;
+// }
+//
+// #page_header_title {
+//     font-size: 36px;
+//     line-height: 1.3;
+//     padding: 29px 0;
+//     width: 100%;
+//     min-width: 1180px;
+//     background: #f5f5f5;
+//     font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
+//     font-weight: 500;
+//     span {
+//       width: 1180px;
+//       margin: 0 auto;
+//       display: block;
+//     }
+// }
+//
+// #bread_crumb {
+//     width: 100%;
+//     min-width: 1180px;
+//     ul {
+//       margin: 0 auto;
+//       width: 1180px;
+//       padding: 41px 0 40px 0;
+//       li {
+//         display: inline;
+//         font-size: 12px;
+//         padding: 0 0 0 17px;
+//         margin: 0 5px 0 0;
+//         line-height: 1.6;
+//         position: relative;
+//         &:before {
+//           font-family: 'design_plus';
+//           content: '\e910';
+//           font-size: 9px;
+//           width: 9px;
+//           height: 9px;
+//           line-height: 9px;
+//           display: block;
+//           position: absolute;
+//           left: 0;
+//           top: 3px;
+//           -webkit-font-smoothing: antialiased;
+//           -moz-osx-font-smoothing: grayscale;
+//       }
+//         &.home a {
+//         position: relative;
+//             width: 14px;
+//             height: 18px;
+//             word-wrap: break-word;
+//             text-indent: -300%;
+//             overflow: hidden;
+//             display: block;
+//             float: left;
+//             -webkit-box-sizing: border-box;
+//             box-sizing: border-box;
+//             &:after {
+//               font-family: 'design_plus';
+//               content: '\e90c';
+//               width: 14px;
+//               height: 14px;
+//               line-height: 14px;
+//               text-indent: 0;
+//               display: block;
+//               position: absolute;
+//               top: 2px;
+//               left: 0px;
+//               -webkit-font-smoothing: antialiased;
+//               -moz-osx-font-smoothing: grayscale;
+//           }
+//         }
+//     }
+//   }
+// }

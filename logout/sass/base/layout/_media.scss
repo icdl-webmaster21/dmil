@@ -1,18 +1,18 @@
 // _media.scss
 @mixin mqPc() {
-    @media screen and (min-width: 768px) {
-        @content;
-    }
-}
-
-@mixin mqTab() {
-    @media screen and (mmin-width: 500px) and (max-width: 930px) {
+    @media screen and (min-width: 950px) {
         @content;
     }
 }
 
 @mixin mqSp() {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 950px) {
+        @content;
+    }
+}
+
+@mixin mqSsp() {
+    @media screen and (max-width: 630px) {
         @content;
     }
 }
