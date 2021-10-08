@@ -4,8 +4,20 @@ aside {
   position: fixed;
   top: 99.92px;
   background: #11A69C;
-  overflow: scroll;
+  overflow: auto;
   z-index: 1000;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+
+  @include mqSp() {
+    width: 210px;
+    height: 100vh;
+    left: -270px;
+    top: 0px;
+  }
 
   nav {
     ul {
@@ -18,6 +30,11 @@ aside {
           line-height: 1.4;
           align-items: center;
           background: #11A69C;
+
+          @include mqSp() {
+            font-size: 12px;
+            padding: 17px 10px 17px 15px;
+          }
 
           &.current {
             background: #008180;
@@ -38,7 +55,7 @@ aside {
           .side-nav-notificaiton {
             color: #ffffff;
             font-size: 10px;
-            font-family: "Helvetica Neue" ,sans-serif;
+            font-family: "Helvetica Neue", sans-serif;
             font-weight: 400;
             top: 10px;
             background: #E13A43;
@@ -73,4 +90,8 @@ aside {
       }
     }
   }
+}
+
+aside.active-aside {
+  left: 0px;
 }

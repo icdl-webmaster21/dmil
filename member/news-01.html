@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" xml:lang="ja" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,8 @@
         <div class="l-hd-inn-logo">
           <h1>
             <a href="#" rel="canonical">
-              <img src="img/logo.svg" alt="DMIL-logo">
+              <img src="img/logo.svg" alt="DMIL-logo" class="pc">
+              <img src="img/logo_sp.svg" alt="DMIL-logo" class="sp">
             </a>
           </h1>
         </div>
@@ -39,6 +41,44 @@
             </div>
           </div>
         </div>
+        <div class="l-hd-inn-r">
+          <div class="l-hd-inn-r-userimg">
+            <img src="img/user-img.png" alt="">
+          </div>
+          <div class="l-hd-inn-r-hamburgermenu">
+            <div class="hamburger-menu" id="hamburger_menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="main-side-nav-sp sp">
+          <nav class="main-side-nav">
+            <ul>
+              <li><a href="news-02.html">DMIL会員へのお知らせ</a></li>
+              <li><a href="news-02.html">講演会動画</a></li>
+              <li><a href="news-02.html">デジタルヘルス最新情報</a></li>
+              <li><a href="news-02.html">DMIL JOURNAL</a></li>
+              <li><a href="news-02.html">DMIL JOURNAL投稿ページ</a></li>
+              <li><a href="news-02.html">代表理事ご挨拶</a></li>
+              <li><a href="news-02.html">認定資格について</a></li>
+              <li class="sp-menu-mypage">
+                <span>マイページ</span>
+                <ul class="sp-menu-mypage-sub" style="display: none;">
+                  <li><a href="">会員情報</a></li>
+                  <li><a href="">単位確認</a></li>
+                  <li><a href="">お支払い</a></li>
+                  <li><a href="">クレジットカード設定</a></li>
+                  <li><a href="">ログアウト</a></li>
+                </ul>
+              </li>
+              <li><a href="news-02.html">お問い合わせ</a></li>
+              <li><a href="news-02.html">プライバシーポリシー</a></li>
+              <li><a href="news-02.html">会員規約</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header><!-- #masthead -->
     <div id="content" class="site-content">
@@ -47,16 +87,32 @@
           <aside>
             <nav class="main-side-nav">
               <ul>
-                <li><a href="news-02.html" rel="alternate" class="d-fl current"><span class="nav-icon"><img src="img/nav/nav-icon-01.png" alt=""></span><span class="nav-link-ttl">DMIL会員へのお知らせ</span><span class="side-nav-notificaiton">99</span></a></li>
-                <li><a href="lecture.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-02.png" alt=""></span><span class="nav-link-ttl">講演会動画</span></a></li>
-                <li><a href="news-03.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-03.png" alt=""></span><span class="nav-link-ttl">デジタルヘルス最新情報</span></a></li>
-                <li><a href="journal.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-04.png" alt=""></span><span class="nav-link-ttl">DMIL JOURNAL</span></a></li>
-                <li><a href="post-journal.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-05.png" alt=""></span><span class="nav-link-ttl">DMIL JOURNAL<br />投稿ページ</span></a></li>
-                <li><a href="greeting.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-06.png" alt=""></span><span class="nav-link-ttl">代表理事よりご挨拶<span class="side-nav-notificaiton">99</span></span></a></li>
-                <li><a href="privacy-policy.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-07.png" alt=""></span><span class="nav-link-ttl">個人情報について</span></a></li>
-                <li><a href="about-membership-agreement.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-08.png" alt=""></span><span class="nav-link-ttl">会員規約</span></a></li>
-                <li><a href="contact" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-09.png" alt=""></span><span class="nav-link-ttl">お問い合わせ</span></a></li>
-                <li><a href="//dmil.ne.jp" rel="alternate" class="d-fl" target="_blank"><span class="nav-icon"><img src="img/nav/nav-icon-10.png" alt=""></span><span class="nav-link-ttl">DMIL 公式サイト</span></a></li>
+                <li><a href="news-02.html" rel="alternate" class="d-fl current"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-01.png" alt=""></span><span class="nav-link-ttl">DMIL会員へのお知らせ</span><span
+                      class="side-nav-notificaiton">99</span></a></li>
+                <li><a href="lecture.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-02.png" alt=""></span><span class="nav-link-ttl">講演会動画</span></a></li>
+                <li><a href="news-03.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-03.png" alt=""></span><span class="nav-link-ttl">デジタルヘルス最新情報</span></a>
+                </li>
+                <li><a href="journal.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-04.png" alt=""></span><span class="nav-link-ttl">DMIL JOURNAL</span></a>
+                </li>
+                <li><a href="post-journal.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-05.png" alt=""></span><span class="nav-link-ttl">DMIL
+                      JOURNAL<br />投稿ページ</span></a></li>
+                <li><a href="greeting.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-06.png" alt=""></span><span class="nav-link-ttl">代表理事よりご挨拶<span
+                        class="side-nav-notificaiton">99</span></span></a></li>
+                <li><a href="privacy-policy.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-07.png" alt=""></span><span class="nav-link-ttl">個人情報について</span></a></li>
+                <li><a href="about-membership-agreement.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-08.png" alt=""></span><span class="nav-link-ttl">会員規約</span></a></li>
+                <li><a href="contact" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-09.png" alt=""></span><span class="nav-link-ttl">お問い合わせ</span></a></li>
+                <li><a href="//dmil.ne.jp" rel="alternate" class="d-fl" target="_blank"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-10.png" alt=""></span><span class="nav-link-ttl">DMIL 公式サイト</span></a>
+                </li>
               </ul>
             </nav>
             <div class="main-side-bnr">
@@ -75,7 +131,7 @@
               </div>
               <div class="page-ttl d-fl">
                 <h2>DMIL会員へのお知らせ</h2>
-                <div class="more-btn">
+                <div class="more-btn pc">
                   <a href="member-news-02.html" rel="alternate" target="_blank">
                     お知らせ一覧
                   </a>
@@ -90,7 +146,9 @@
                     <div class="news-content">
                       <a href="" rel="alternate">
                         <h2 class="news-ttl">第4回 医療DX講演会 講演内容決定のお知らせ</h2>
-                        <p class="news-detaisl">9月4日（土）に、第4回 Digital Medical Innovation Lab.主催 医療DX講演会を開催いたします。当講演会では、特別講演として、ハワイで開業されておられる聖ルカクリニック院長　小林恵一先生より、「デジタル知識が無くては対応できない医療のグローバル化」についてご講話を頂くことが決定いたしましたので、お知らせ申し上げます。</p>
+                        <p class="news-detaisl pc">9月4日（土）に、第4回 Digital Medical Innovation Lab.主催
+                          医療DX講演会を開催いたします。当講演会では、特別講演として、ハワイで開業されておられる聖ルカクリニック院長　小林恵一先生より、「デジタル知識が無くては対応できない医療のグローバル化」についてご講話を頂くことが決定いたしましたので、お知らせ申し上げます。
+                        </p>
                       </a>
                     </div>
                   </li>
@@ -99,7 +157,9 @@
                       <time>2021.01.01</time>
                     </div>
                     <div class="news-content">
-                      <a href="" rel="alternate"><h2 class="news-ttl">【医師が先導するデジタル医療の革新】 島田先生のスペシャルインタビュー公開！</h2></a>
+                      <a href="" rel="alternate">
+                        <h2 class="news-ttl">【医師が先導するデジタル医療の革新】 島田先生のスペシャルインタビュー公開！</h2>
+                      </a>
                     </div>
                   </li>
                   <li class="highlight-news d-fl">
@@ -107,7 +167,9 @@
                       <time>2021.01.01</time>
                     </div>
                     <div class="news-content">
-                      <a href="" rel="alternate"><h2 class="news-ttl">第3回 医療DX講演会 講演内容決定のお知らせ</h2></a>
+                      <a href="" rel="alternate">
+                        <h2 class="news-ttl">第3回 医療DX講演会 講演内容決定のお知らせ</h2>
+                      </a>
                     </div>
                   </li>
                   <li class="d-fl">
@@ -115,10 +177,17 @@
                       <time>2021.01.01</time>
                     </div>
                     <div class="news-content">
-                      <a href="" rel="alternate"><h2 class="news-ttl">第2回 医療DX講演会 講演内容決定のお知らせ</h2></a>
+                      <a href="" rel="alternate">
+                        <h2 class="news-ttl">第2回 医療DX講演会 講演内容決定のお知らせ</h2>
+                      </a>
                     </div>
                   </li>
                 </ul>
+                <div class="more-btn sp">
+                  <a href="member-news-02.html" rel="alternate" target="_blank">
+                    お知らせ一覧
+                  </a>
+                </div>
               </div>
               <div class="page-ttl">
                 <h2>ご意見ボックス</h2>
@@ -144,9 +213,9 @@
                     </div>
                   </div>
                   <div class="input-box-aera">
-                    <textarea name="name" rows="4" cols="60" placeholder="ご記入ください。"></textarea>
+                    <textarea name="name" rows="12" cols="60" placeholder="ご記入ください。"></textarea>
                     <div class="submit-area d-fl">
-                      <p>※投稿はDIML運営事務局（contact@dmil.ne.jp）に送信されます</p>
+                      <p class="pc">※投稿はDIML運営事務局（contact@dmil.ne.jp）に送信されます</p>
                       <div class="submit-area-btn">
                         <button type="button" name="button">送信する</button>
                       </div>

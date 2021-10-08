@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" xml:lang="ja" dir="ltr">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,8 @@
         <div class="l-hd-inn-logo">
           <h1>
             <a href="#" rel="canonical">
-              <img src="img/logo.svg" alt="DMIL-logo">
+              <img src="img/logo.svg" alt="DMIL-logo" class="pc">
+              <img src="img/logo_sp.svg" alt="DMIL-logo" class="sp">
             </a>
           </h1>
         </div>
@@ -42,6 +44,44 @@
             </div>
           </div>
         </div>
+        <div class="l-hd-inn-r">
+          <div class="l-hd-inn-r-userimg">
+            <img src="img/user-img.png" alt="">
+          </div>
+          <div class="l-hd-inn-r-hamburgermenu">
+            <div class="hamburger-menu" id="hamburger_menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="main-side-nav-sp sp">
+          <nav class="main-side-nav">
+            <ul>
+              <li><a href="news-02.html">DMIL会員へのお知らせ</a></li>
+              <li><a href="news-02.html">講演会動画</a></li>
+              <li><a href="news-02.html">デジタルヘルス最新情報</a></li>
+              <li><a href="news-02.html">DMIL JOURNAL</a></li>
+              <li><a href="news-02.html">DMIL JOURNAL投稿ページ</a></li>
+              <li><a href="news-02.html">代表理事ご挨拶</a></li>
+              <li><a href="news-02.html">認定資格について</a></li>
+              <li class="sp-menu-mypage">
+                <span>マイページ</span>
+                <ul class="sp-menu-mypage-sub" style="display: none;">
+                  <li><a href="">会員情報</a></li>
+                  <li><a href="">単位確認</a></li>
+                  <li><a href="">お支払い</a></li>
+                  <li><a href="">クレジットカード設定</a></li>
+                  <li><a href="">ログアウト</a></li>
+                </ul>
+              </li>
+              <li><a href="news-02.html">お問い合わせ</a></li>
+              <li><a href="news-02.html">プライバシーポリシー</a></li>
+              <li><a href="news-02.html">会員規約</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header><!-- #masthead -->
     <div id="content" class="site-content">
@@ -50,16 +90,32 @@
           <aside>
             <nav class="main-side-nav">
               <ul>
-                <li><a href="news-02.html" rel="alternate" class="d-fl current"><span class="nav-icon"><img src="img/nav/nav-icon-01.png" alt=""></span><span class="nav-link-ttl">DMIL会員へのお知らせ</span><span class="side-nav-notificaiton">99</span></a></li>
-                <li><a href="lecture.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-02.png" alt=""></span><span class="nav-link-ttl">講演会動画</span></a></li>
-                <li><a href="news-03.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-03.png" alt=""></span><span class="nav-link-ttl">デジタルヘルス最新情報</span></a></li>
-                <li><a href="journal.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-04.png" alt=""></span><span class="nav-link-ttl">DMIL JOURNAL</span></a></li>
-                <li><a href="post-journal.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-05.png" alt=""></span><span class="nav-link-ttl">DMIL JOURNAL<br />投稿ページ</span></a></li>
-                <li><a href="greeting.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-06.png" alt=""></span><span class="nav-link-ttl">代表理事よりご挨拶<span class="side-nav-notificaiton">99</span></span></a></li>
-                <li><a href="privacy-policy.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-07.png" alt=""></span><span class="nav-link-ttl">個人情報について</span></a></li>
-                <li><a href="about-membership-agreement.html" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-08.png" alt=""></span><span class="nav-link-ttl">会員規約</span></a></li>
-                <li><a href="contact" rel="alternate" class="d-fl"><span class="nav-icon"><img src="img/nav/nav-icon-09.png" alt=""></span><span class="nav-link-ttl">お問い合わせ</span></a></li>
-                <li><a href="//dmil.ne.jp" rel="alternate" class="d-fl" target="_blank"><span class="nav-icon"><img src="img/nav/nav-icon-10.png" alt=""></span><span class="nav-link-ttl">DMIL 公式サイト</span></a></li>
+                <li><a href="news-02.html" rel="alternate" class="d-fl current"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-01.png" alt=""></span><span class="nav-link-ttl">DMIL会員へのお知らせ</span><span
+                      class="side-nav-notificaiton">99</span></a></li>
+                <li><a href="lecture.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-02.png" alt=""></span><span class="nav-link-ttl">講演会動画</span></a></li>
+                <li><a href="news-03.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-03.png" alt=""></span><span class="nav-link-ttl">デジタルヘルス最新情報</span></a>
+                </li>
+                <li><a href="journal.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-04.png" alt=""></span><span class="nav-link-ttl">DMIL JOURNAL</span></a>
+                </li>
+                <li><a href="post-journal.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-05.png" alt=""></span><span class="nav-link-ttl">DMIL
+                      JOURNAL<br />投稿ページ</span></a></li>
+                <li><a href="greeting.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-06.png" alt=""></span><span class="nav-link-ttl">代表理事よりご挨拶<span
+                        class="side-nav-notificaiton">99</span></span></a></li>
+                <li><a href="privacy-policy.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-07.png" alt=""></span><span class="nav-link-ttl">個人情報について</span></a></li>
+                <li><a href="about-membership-agreement.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-08.png" alt=""></span><span class="nav-link-ttl">会員規約</span></a></li>
+                <li><a href="contact" rel="alternate" class="d-fl"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-09.png" alt=""></span><span class="nav-link-ttl">お問い合わせ</span></a></li>
+                <li><a href="//dmil.ne.jp" rel="alternate" class="d-fl" target="_blank"><span class="nav-icon"><img
+                        src="img/nav/nav-icon-10.png" alt=""></span><span class="nav-link-ttl">DMIL 公式サイト</span></a>
+                </li>
               </ul>
             </nav>
             <div class="main-side-bnr">
@@ -71,79 +127,94 @@
             </div>
           </aside>
           <div class="cd-content-wrapper">
-            <div class="journal-details-content">
-              <div class="cd-siteMap breadcrumbs">
-                <span><a href="" class="home"><span class="breadcrumbs-label">DMIL会員トップ</span></a></span>
-                &gt;<span><a href="" class="home"><span class="breadcrumbs-label">DMIL JOURNAL</span></a></span>
-                &gt;<span class="journal-archive"><span class="breadcrumbs-label">DMIL JOURNAL動画タイトル動画</span></span>
-              </div>
-              <article class="single-journal">
-                <div class="single-date">
-                  <time><i class="fas fa-clock"></i>2021.01.01</time>
+            <div class="cd-content-wrapper-inn">
+              <div class="journal-details-content">
+                <div class="cd-siteMap breadcrumbs">
+                  <span><a href="" class="home"><span class="breadcrumbs-label">DMIL会員トップ</span></a></span>
+                  &gt;<span><a href="" class="home"><span class="breadcrumbs-label">DMIL JOURNAL</span></a></span>
+                  &gt;<span class="journal-archive"><span class="breadcrumbs-label">第4回 医療DX講演会 講演内容決定のお知らせ</span></span>
                 </div>
-                <div class="page-ttl">
-                  <h1>h1タグh1タグh1タグh1タグh1タグh1タグh1タグh1タグh1タグh1タグ</h1>
-                </div>
-                <div class="single-journal-content">
-                  <figure class="single-journal-content-thumbnail">
-                    <img src="img/journal-thumbnail-01.png" alt="thumbnail">
-                  </figure>
-                  <p>PタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグ</p>
-                  PタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグ
-                  <p>PタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグ</p>
-                  <h2>h2タグh2タグh2タグh2タグh2タグh2タグh2タグh2タグh2タグh2タグh2タグ</h2>
-                  <h3>h3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグ</h3>
-                  <h4>h4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグ</h4>
-                  <ul>
-                    <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
-                    <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
-                    <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
-                    <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
-                    <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
+                <article class="single-journal">
+                  <div class="single-date">
+                    <time><i class="fas fa-clock"></i>2021.01.01</time>
+                  </div>
+                  <div class="page-ttl">
+                    <h1>h1タグh1タグh1タグh1タグh1タグh1タグh1タグh1タグh1タグh1タグ</h1>
+                  </div>
+                  <div class="single-journal-content">
+                    <figure class="single-journal-content-thumbnail">
+                      <img src="img/journal-thumbnail-01.png" alt="thumbnail">
+                    </figure>
+                    <p>
+                      PタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグ
+                    </p>
+                    PタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグ
+                    <p>
+                      PタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグPタグ
+                    </p>
+                    <h2>h2タグh2タグh2タグh2タグh2タグh2タグh2タグh2タグh2タグh2タグh2タグ</h2>
+                    <h3>h3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグh3タグ</h3>
+                    <h4>h4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグh4タグ</h4>
+                    <ul>
+                      <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
+                      <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
+                      <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
+                      <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
+                      <li>リストタグリストタグリストタグリストタグリストタグリストタグ</li>
+                    </ul>
+                  </div>
+                  <ul class="post_links more-btn d-fl">
+                    <li><a href="https://sand-hair.com/9506/" rel="prev" class="single-post-prev">前のJOURNALを見る</a></li>
+                    <li><a href="https://sand-hair.com/9636/" rel="next" class="single-post-next">次のJOURNALを見る</a></li>
                   </ul>
-                </div>
-                <ul class="post_links more-btn d-fl">
-        					<li><a href="https://sand-hair.com/9506/" rel="prev" class="single-post-prev">前のJOURNALを見る</a></li>
-                  <li><a href="https://sand-hair.com/9636/" rel="next" class="single-post-next">次のJOURNALを見る</a></li>
-                </ul>
-              </article>
-              <div class="journal-list">
-                <div class="page-ttl d-fl">
-                  <h2>DMIL JOURNAL</h2>
-                  <div class="more-btn">
+                </article>
+                <div class="journal-list">
+                  <div class="page-ttl d-fl">
+                    <h2>DMIL JOURNAL</h2>
+                    <div class="more-btn pc">
+                      <a href="member-journal-02.html" rel="alternate" target="_blank">
+                        JOURNAL一覧
+                      </a>
+                    </div>
+                  </div>
+                  <ul>
+                    <li class="d-fl">
+                      <div class="journal-date">
+                        <time>2021.01.01</time>
+                      </div>
+                      <div class="journal-content">
+                        <a href="" rel="alternate">
+                          <h2 class="journal-ttl">【医師が先導するデジタル医療の革新】 島田先生のスペシャルインタビュー公開！</h2>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="d-fl">
+                      <div class="journal-date">
+                        <time>2021.01.01</time>
+                      </div>
+                      <div class="journal-content">
+                        <a href="" rel="alternate">
+                          <h2 class="journal-ttl">第3回 医療DX講演会 講演内容決定のお知らせ</h2>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="highlight-journal d-fl">
+                      <div class="journal-date">
+                        <time>2021.01.01</time>
+                      </div>
+                      <div class="journal-content">
+                        <a href="" rel="alternate">
+                          <h2 class="journal-ttl">第2回 医療DX講演会 講演内容決定のお知らせ</h2>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="journal-list-btn more-btn sp">
                     <a href="member-journal-02.html" rel="alternate" target="_blank">
                       JOURNAL一覧
                     </a>
                   </div>
                 </div>
-                <ul>
-                  <li class="d-fl">
-                    <div class="journal-date">
-                      <time>2021.01.01</time>
-                    </div>
-                    <div class="journal-content">
-                      <a href="" rel="alternate">
-                        <h2 class="journal-ttl">【医師が先導するデジタル医療の革新】 島田先生のスペシャルインタビュー公開！</h2>
-                      </a>
-                    </div>
-                  </li>
-                  <li class="d-fl">
-                    <div class="journal-date">
-                      <time>2021.01.01</time>
-                    </div>
-                    <div class="journal-content">
-                      <a href="" rel="alternate"><h2 class="journal-ttl">第3回 医療DX講演会 講演内容決定のお知らせ</h2></a>
-                    </div>
-                  </li>
-                  <li class="highlight-journal d-fl">
-                    <div class="journal-date">
-                      <time>2021.01.01</time>
-                    </div>
-                    <div class="journal-content">
-                      <a href="" rel="alternate"><h2 class="journal-ttl">第2回 医療DX講演会 講演内容決定のお知らせ</h2></a>
-                    </div>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>

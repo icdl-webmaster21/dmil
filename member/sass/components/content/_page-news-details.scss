@@ -6,10 +6,14 @@
     box-sizing: border-box;
     padding: 25px 37px;
 
+    @include mqSp() {
+      padding: 30px 15px;
+    }
+
     .single-date {
       time {
         font-size: 14px;
-        font-family: "Helvetica Neue" ,sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
         font-weight: 400;
         line-height: 1.6;
         color: #11A69C;
@@ -43,6 +47,7 @@
         width: 100%;
         margin: 27px 0;
       }
+
       font-size: 14px;
       letter-spacing: 0.1rem;
       line-height: 1.6;
@@ -112,7 +117,7 @@
             position: absolute;
             left: 0;
             top: 50%;
-            transform: translate(0 , -50%);
+            transform: translate(0, -50%);
             width: 4px;
             height: 4px;
             border-radius: 50%;
@@ -138,11 +143,28 @@
       margin: 50px auto;
       justify-content: space-between;
 
+      @include mqSp() {
+        max-width: unset;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+      }
+
       li {
         width: 47%;
 
+        @include mqSp() {
+          width: 250px;
+        }
+
         a {
           border-radius: 60px;
+
+          &:last-child {
+            @include mqSp() {
+              margin-top: 20px;
+            }
+          }
 
           &.single-post-prev {
             &:after {
@@ -166,11 +188,21 @@
     box-sizing: border-box;
     padding: 35px 0 46px;
 
+    @include mqSp() {
+      margin: 30px 0px;
+      padding: 30px 15px;
+    }
+
     .page-ttl {
       width: 90%;
       margin: 0 auto 20px;
       align-items: center;
       justify-content: space-between;
+
+      @include mqSp() {
+        width: 100%;
+        margin-bottom: 30px;
+      }
 
       .more-btn {
         width: 164px;
@@ -186,28 +218,43 @@
       margin: auto;
       padding: 8px 0;
 
+      @include mqSp() {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        margin-bottom: 13px;
+      }
+
       .news-date {
         font-size: 14px;
         color: #999999;
         width: 100px;
-        font-family: "Helvetica Neue" ,sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
         font-weight: 500;
         width: 100px;
         line-height: 1.8;
+
+        @include mqSp() {
+          width: 100%;
+        }
       }
 
       .news-content {
         width: calc(100% - 100px);
 
+        @include mqSp() {
+          width: 100%;
+        }
+
         h2 {
-          font-family: 'ヒラギノ角ゴ ProN W6','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-family: 'ヒラギノ角ゴ ProN W6', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
           font-size: 14px;
           font-weight: 500;
           line-height: 1.6;
         }
 
         p {
-          font-family: 'ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-family: 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
           font-size: 12px;
           line-height: 1.8;
         }
@@ -220,6 +267,15 @@
             text-decoration: underline;
           }
         }
+      }
+    }
+
+    .more-btn {
+      width: 250px;
+      margin: 20px auto 0px;
+
+      a {
+        border-radius: 60px;
       }
     }
   }

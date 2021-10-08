@@ -7,16 +7,43 @@
     box-sizing: border-box;
     padding: 50px 40px;
 
+    @include mqSp() {
+      padding: 30px 15px 30px;
+      margin-top: 7px;
+      margin-bottom: 0px;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+    }
+
     &-text {
       h2 {
         font-size: 20px;
         font-weight: 600;
+
+        @include mqSp() {
+          font-size: 18px;
+          margin-top: 30px;
+        }
+      }
+
+      h2.no-mt {
+        @include mqSp() {
+          margin-top: 0px;
+        }
       }
 
       p {
         font-size: 14px;
         margin: 20px 0 50px;
         line-height: 1.6;
+
+        @include mqSp() {
+
+          line-height: 2;
+        }
 
         &.float-right {
           text-align: right;
@@ -32,23 +59,64 @@
         }
       }
 
+      p.mt-0 {
+        @include mqSp() {
+          margin-top: 0px;
+        }
+      }
+
+      p.pp-date {
+        @include mqSp() {
+          margin: 0px;
+        }
+      }
+
       ol {
         margin: 20px 0 50px 40px;
         list-style-type: decimal;
 
+        @include mqSp() {
+          margin: 20px 0 35px 22px;
+        }
+
         li {
           font-size: 14px;
           line-height: 1.6;
+
+          @include mqSp() {
+            margin-bottom: 20px;
+            line-height: 2;
+          }
         }
       }
 
       ul {
         margin-left: 20px;
+
+        li {
+          @include mqSp() {
+            margin-top: 22px;
+          }
+
+          &:first-child {
+            @include mqSp() {
+              margin-top: 44px;
+            }
+          }
+        }
+
+        @include mqSp() {
+          margin-left: 0px;
+        }
       }
     }
 
     &.pp-wrap-c {
       padding: 30px 35px;
+
+      @include mqSp() {
+        padding: 30px 15px 30px;
+      }
 
       .pp-wrap-text {
         .no-margin {
@@ -56,7 +124,12 @@
         }
 
         p {
-          margin: 56px 0;
+          margin: 20px 0;
+
+          @include mqSp() {
+            margin-top: 15px;
+            margin-bottom: 20px;
+          }
         }
 
         ol {

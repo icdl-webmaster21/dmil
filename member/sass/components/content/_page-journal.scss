@@ -3,11 +3,26 @@
     align-items: center;
     justify-content: space-between;
 
+    @include mqSp() {
+      padding-left: 0px;
+    }
+
     .more-btn {
       width: 280px;
 
+      @include mqSp() {
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+      }
+
       a {
         border-radius: 45px;
+
+        @include mqSp() {
+          display: inline-block;
+          width: 280px;
+        }
       }
     }
   }
@@ -19,6 +34,10 @@
     article {
       width: 24%;
       margin: 0.5% 0.5% 20px;
+
+      @include mqSp() {
+        width: 49%;
+      }
 
       .journal-content {
         padding: 13px 10px;
@@ -78,10 +97,14 @@
     box-sizing: border-box;
     padding: 25px 37px;
 
+    @include mqSp() {
+      padding: 30px 15px 40px;
+    }
+
     .single-date {
       time {
         font-size: 14px;
-        font-family: "Helvetica Neue" ,sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
         font-weight: 400;
         line-height: 1.6;
         color: #11A69C;
@@ -115,6 +138,7 @@
         width: 100%;
         margin: 27px 0;
       }
+
       font-size: 14px;
       letter-spacing: 0.1rem;
       line-height: 1.6;
@@ -184,7 +208,7 @@
             position: absolute;
             left: 0;
             top: 50%;
-            transform: translate(0 , -50%);
+            transform: translate(0, -50%);
             width: 4px;
             height: 4px;
             border-radius: 50%;
@@ -210,8 +234,27 @@
       margin: 50px auto;
       justify-content: space-between;
 
+      @include mqSp() {
+        max-width: unset;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+      }
+
       li {
         width: 47%;
+
+        @include mqSp() {
+          max-width: 250px;
+          width: 100%;
+        }
+
+        &:last-child {
+          @include mqSp() {
+            margin-top: 20px;
+          }
+        }
 
         a {
           border-radius: 60px;
@@ -258,11 +301,16 @@
       margin: auto;
       padding: 8px 0;
 
+      @include mqSp() {
+        flex-direction: column;
+        width: 100%;
+      }
+
       .journal-date {
         font-size: 14px;
         color: #999999;
         width: 100px;
-        font-family: "Helvetica Neue" ,sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
         font-weight: 500;
         width: 100px;
         line-height: 1.8;
@@ -271,15 +319,19 @@
       .journal-content {
         width: calc(100% - 100px);
 
+        @include mqSp() {
+          width: 100%;
+        }
+
         h2 {
-          font-family: 'ヒラギノ角ゴ ProN W6','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-family: 'ヒラギノ角ゴ ProN W6', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
           font-size: 14px;
           font-weight: 500;
           line-height: 1.6;
         }
 
         p {
-          font-family: 'ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-family: 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
           font-size: 12px;
           line-height: 1.8;
         }
@@ -291,6 +343,19 @@
             color: #11A69C;
             text-decoration: underline;
           }
+        }
+      }
+    }
+
+    &-btn {
+      @include mqSp() {
+        margin-top: 20px;
+      }
+
+      a {
+        @include mqSp() {
+          border-radius: 45px;
+          width: 250px;
         }
       }
     }

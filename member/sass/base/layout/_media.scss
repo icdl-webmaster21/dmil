@@ -5,14 +5,14 @@
     }
 }
 
-@mixin mqTab() {
-    @media screen and (mmin-width: 500px) and (max-width: 930px) {
-        @content;
-    }
-}
+// @mixin mqTab() {
+    //     @media screen and (mmin-width: 500px) and (max-width: 930px) {
+    //         @content;
+    //     }
+    // }
 
 @mixin mqSp() {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1260px) {
         @content;
     }
 }

@@ -8,23 +8,42 @@
           background: #fff;
           box-sizing: border-box;
           padding: 30px 37px;
-          margin: 30px 0;
+          margin: 20px 0 30px;
+
+          @include mqSp() {
+            margin-top: 7px;
+            margin-bottom: 0px;
+            padding: 30px 15px 40px 15px;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+          }
 
           .register-caution {
             p {
-              margin: 30px 0;
-              text-align: center;
-              font-size: 14px;
+              margin-bottom: 20px;
+              text-align: left;
+              font-size: 16px;
+
+              @include mqSp() {
+                font-size: 16px;
+                text-align: left;
+                margin-top: 0px;
+                margin-bottom: 25px;
+              }
 
               span {
-                color: #008180;
+                color: #FF0000;
+                font-size: 16px;
               }
             }
           }
 
           dl {
             dt {
-              font-size: 16px;
+              font-size: 14px;
               background: #F6F7F9;
               padding: 15px;
               width: 200px;
@@ -33,13 +52,22 @@
               border-radius: 10px;
               height: 56px;
               min-height: 56px;
-              color: #999999;
+              color: #333333;
+
+              @include mqSp() {
+                width: 100%;
+              }
+
               .required {
                 font-size: 12px;
-                color: #008180;
+                color: #FF0000;
                 position: relative;
                 top: -5px;
                 right: -5px;
+
+                @include mqSp() {
+                  font-size: 10px;
+                }
               }
             }
 
@@ -48,6 +76,10 @@
               box-sizing: border-box;
               font-size: 16px;
               margin: 5px 0;
+
+              @include mqSp() {
+                width: 100%;
+              }
 
               input,
               p,
@@ -67,6 +99,11 @@
                 &:focus {
                   outline: none;
                 }
+              }
+
+              input,
+              textarea {
+                font-size: 14px;
               }
 
               textarea {
@@ -97,6 +134,10 @@
                 position: relative;
                 margin-right: 10px;
                 width: 133px;
+
+                @include mqSp() {
+                  width: 32%;
+                }
 
                 select {
                   display: inline-block;
@@ -151,6 +192,10 @@
               font-size: 14px;
               padding: 10px;
 
+              @include mqSp() {
+                margin-left: 0px;
+              }
+
               input {
                 position: absolute;
                 top: 0;
@@ -179,11 +224,24 @@
           .legal-acceptance {
             font-size: 20px;
             position: relative;
-            text-align: center;
-            margin: 30px auto;
-            width: 180px;
+            text-align: left;
+            margin: 30px 0px;
+            width: auto;
             letter-spacing: 0.2rem;
             line-height: 1;
+
+            @include mqSp() {
+              margin: 50px 0px;
+              text-align: center;
+            }
+
+            span.required {
+              position: relative;
+              top: -5px;
+              right: -5px;
+              font-size: 10px;
+              color: red;
+            }
 
             a {
               text-decoration: underline;
@@ -239,15 +297,53 @@
               }
             }
 
-            input[type=checkbox]:checked + label::before {
+            input[type=checkbox]:checked+label::before {
               background: #11a69c;
               border: 1px solid #11a69c;
             }
 
-            input[type=checkbox]:checked + label::after {
+            input[type=checkbox]:checked+label::after {
               opacity: 1;
             }
           }
+
+          .legal-acceptance.text-left {
+            text-align: left;
+          }
+
+          .legal-acceptance.ml-15 {
+            margin-left: 15px;
+          }
+
+          .legal-acceptance.confirm-accept {
+
+            label {
+              margin-left: 100px;
+
+              &::before {
+                display: none;
+              }
+
+              &::after {
+                display: none;
+              }
+
+              @include mqSp() {
+                margin-left: 0px;
+                margin-top: 95px;
+                margin-bottom: 50px;
+                padding-left: 0px;
+              }
+            }
+          }
+
+          .legal-acceptance.confirm-accept.mt-30.text-left {
+            padding-left: 15px;
+          }
+        }
+
+        &-inn.mt-confirm {
+          padding-top: 65px;
         }
       }
 
@@ -257,15 +353,26 @@
           width: 100%;
           border-radius: 10px;
           padding: 15px;
-          border: 2px solid #F6F7F9;
           box-sizing: border-box;
           appearance: none;
           -moz-appearance: none;
           -webkit-appearance: none;
           color: #333333;
           min-height: 56px;
+
+          @include mqSp() {
+            font-size: 14px;
+            font-weight: bold;
+          }
+        }
+
+        .input-value.p-0 {
+          @include mqSp() {
+            padding: 0px;
+          }
         }
       }
+
       &.mypage-container {
         .input-value {
           display: block;
@@ -279,32 +386,98 @@
           color: #333333;
           min-height: 56px;
         }
-        .submit-area-btn{
-            max-width: unset;
-            margin: 30px auto 0;
+
+        .w-sm {
+          width: 200px !important;
         }
-      }
-      &.confirm-container {
-        .input-value {
-          display: block;
-          width: 100%;
-          border-radius: 10px;
-          padding: 15px;
-          border: 2px solid #F6F7F9;
-          box-sizing: border-box;
+
+        .select {
+          align-items: center;
+          height: inherit;
+
+          &-value {
+            border-radius: 10px;
+            font-size: 14px;
+            min-width: 134px;
+            padding: 15px;
+            color: #333333;
+            border: 2px solid #F6F7F9;
+
+            @include mqSp() {
+              width: 31%;
+            }
+
+            &:nth-child(2) {
+              @include mqSp() {
+                margin: 0px 3.33%;
+              }
+            }
+
+            &:focus,
+            &:active,
+            &:focus-visible {
+              outline: none;
+              border: 2px solid #F6F7F9;
+            }
+
+          }
+        }
+
+        .file_input {
+          align-items: center;
+          flex-wrap: nowrap;
+        }
+
+        .d-none {
+          display: none;
+        }
+
+        .input_file_name {
+          min-width: 200px;
+          font-size: 14px;
+          color: #999999;
+          padding-left: 15px;
+
+          @include mqSp() {
+            width: 100%;
+          }
+        }
+
+        .input_file_btn {
           appearance: none;
           -moz-appearance: none;
           -webkit-appearance: none;
-          color: #333333;
-          min-height: 56px;
+          color: #fff;
+          font-size: 14px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          background-color: #11A69C;
+          border: 1px solid #11A69C;
+          padding: 12px 20px;
+
+          @include mqSp() {
+            min-width: 140px;
+          }
+        }
+
+        .submit-area-btn {
+          max-width: unset;
+          margin: 30px auto 0;
         }
       }
+
       .submit-area-btn {
         max-width: 270px;
         margin: 30px auto 60px;
+        margin-bottom: 0px;
         justify-content: space-between;
 
         button {
+          cursor: pointer;
+          position: relative;
           width: 110px;
           margin: 0;
           display: inline-block;
@@ -316,7 +489,54 @@
             background: #11a69c;
             color: #fff;
           }
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            width: 5px;
+            height: 5px;
+            border-top: 1px solid #11A69C;
+            border-right: 1px solid #11A69C;
+            transform: rotate(45deg) translateY(-80%);
+            -webkit-transform: rotate(45deg) translateY(-80%);
+            -moz-transform: rotate(45deg) translateY(-80%);
+            -ms-transform: rotate(45deg) translateY(-80%);
+            -o-transform: rotate(45deg) translateY(-80%);
+          }
+
         }
+
+        button.prev-btn {
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            width: 5px;
+            height: 5px;
+            border-top: 1px solid #11A69C;
+            border-left: 1px solid #11A69C;
+            border-right: 0px;
+            transform: rotate(-45deg) translateY(-80%);
+            -webkit-transform: rotate(-45deg) translateY(-80%);
+            -moz-transform: rotate(-45deg) translateY(-80%);
+            -ms-transform: rotate(-45deg) translateY(-80%);
+            -o-transform: rotate(-45deg) translateY(-80%);
+          }
+
+        }
+
+        button.no-arw {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .submit-area-btn.b-center {
+        justify-content: center;
       }
     }
   }
@@ -328,14 +548,26 @@
     border-radius: 30px;
     background: #fff;
     box-sizing: border-box;
-    padding: 40px 37px;
-    margin: 30px 0;
-    h2{
+    padding: 30px 37px;
+    margin: 20px 0 30px;
+
+    @include mqSp() {
+      margin-top: 7px;
+      padding: 25px 15px 35px;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+    }
+
+    h2 {
       text-align: center;
       font-size: 24px;
       font-weight: bold;
       color: #008C8D;
     }
+
     p {
       text-align: center;
       font-size: 16px;
@@ -346,6 +578,7 @@
     .more-btn {
       max-width: unset;
       margin: auto;
+
       a {
         border-radius: 45px;
         letter-spacing: 0.12rem;
@@ -354,6 +587,7 @@
         box-sizing: border-box;
         font-size: 14px;
         line-height: 1;
+
         &:after {
           content: none;
         }
@@ -363,5 +597,21 @@
 }
 
 .register-content .register-infornation.contact-infornation form .register-container-inn .legal-acceptance {
-  width: 260px;
+
+  width: auto;
+
+  @include mqSp() {
+    margin: 50px 0px;
+  }
+
+  span.required {
+    @include mqSp() {
+      position: relative;
+      top: -5px;
+      right: -5px;
+      font-size: 10px;
+      color: #FF0000;
+    }
+  }
+
 }

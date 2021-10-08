@@ -6,4 +6,20 @@ $('.lecutre-recommended-list').slick({
   arrows: false,
   infinite: false,
   centerMode: false,
+  responsive: [
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });

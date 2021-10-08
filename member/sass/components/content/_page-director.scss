@@ -7,10 +7,19 @@
     box-sizing: border-box;
     padding: 50px 40px;
 
+    @include mqSp() {
+      padding: 30px 15px 40px;
+    }
+
     &-thumbnail {
       max-width: 700px;
       width: 90%;
       margin: 0 auto 50px;
+
+      @include mqSp() {
+        width: 100%;
+        max-width: unset;
+      }
     }
 
     &-text {
@@ -31,8 +40,18 @@
       margin: auto 0 auto auto;
       align-items: center;
 
+      @include mqSp() {
+        flex-direction: column-reverse;
+        margin: 30px auto 0px;
+      }
+
       &-info {
         width: calc(100% - 160px);
+
+        @include mqSp() {
+          width: 90%;
+          margin-top: 30px;
+        }
 
         h3 {
           font-size: 14px;

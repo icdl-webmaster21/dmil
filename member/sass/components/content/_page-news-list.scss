@@ -20,23 +20,37 @@
     box-sizing: border-box;
     padding: 20px 0 16px;
 
+    @include mqSp() {
+      padding: 25px 0 30px;
+    }
+
     li {
       width: 96%;
       margin: auto;
       padding: 10px 25px;
       box-sizing: border-box;
 
+      @include mqSp() {
+        width: 100%;
+        padding: 10px 15px;
+        flex-direction: column;
+      }
+
       &.top-first-news {
         background: #fff;
         box-shadow: 0 0 20px rgba($color: #bcbcbc, $alpha: 0.3);
         border-radius: 20px;
+
+        @include mqSp() {
+          box-shadow: unset;
+        }
       }
 
       .news-date {
         font-size: 14px;
         color: #999999;
         width: 100px;
-        font-family: "Helvetica Neue" ,sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
         font-weight: 500;
         width: 100px;
         line-height: 1.8;
@@ -46,14 +60,14 @@
         width: calc(100% - 100px);
 
         h2 {
-          font-family: 'ヒラギノ角ゴ ProN W6','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-family: 'ヒラギノ角ゴ ProN W6', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
           font-size: 14px;
           font-weight: 500;
           line-height: 1.6;
         }
 
         p {
-          font-family: 'ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-family: 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
           font-size: 12px;
           line-height: 1.8;
           margin-top: 10px;
@@ -66,6 +80,24 @@
             color: #11A69C;
             text-decoration: underline;
           }
+        }
+      }
+    }
+
+    .more-btn {
+      @include mqSp() {
+        width: 250px;
+        margin: 0px auto;
+        margin-top: 30px;
+      }
+
+      a {
+        @include mqSp() {
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px;
         }
       }
     }
@@ -82,12 +114,21 @@
     form {
       justify-content: space-between;
 
+      @include mqSp() {
+        flex-direction: column;
+      }
+
       .select-box {
         width: 35%;
 
+        @include mqSp() {
+          width: 100%;
+          padding-left: 10px;
+        }
+
         &-inn {
           margin: 28px 0;
-          font-family: 'ヒラギノ角ゴ ProN W6','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
+          font-family: 'ヒラギノ角ゴ ProN W6', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
           font-size: 12px;
           position: relative;
 
@@ -141,12 +182,12 @@
             }
           }
 
-          input[type=checkbox]:checked + label::before {
+          input[type=checkbox]:checked+label::before {
             background: #11a69c;
             border: 1px solid #11a69c;
           }
 
-          input[type=checkbox]:checked + label::after {
+          input[type=checkbox]:checked+label::after {
             opacity: 1;
           }
         }
@@ -155,6 +196,12 @@
       .input-box-aera {
         width: 62%;
         margin: 15px 0;
+
+        @include mqSp() {
+          width: 100%;
+          margin-bottom: 0px;
+          padding-bottom: 40px;
+        }
 
         textarea {
           width: 100%;
@@ -183,6 +230,11 @@
           margin-top: 15px;
           margin-right: 10px;
 
+          @include mqSp() {
+            justify-content: center;
+            margin-top: 30px;
+          }
+
           p {
             font-size: 12px;
             margin-right: 13px;
@@ -190,6 +242,10 @@
 
           .submit-area-btn {
             width: 120px;
+
+            @include mqSp() {
+              width: 250px;
+            }
 
             button {
               width: 100%;

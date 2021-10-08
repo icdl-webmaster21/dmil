@@ -1,105 +1,150 @@
 * {
-    margin: 0;
-    padding:0;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -ms-box-sizing:border-box;
-    box-sizing: border-box;
-    font-weight: normal;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: normal;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
-    -webkit-text-size-adjust: 100%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    font-variant-ligatures: none;
-    font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', 'Meiryo','ＭＳ ゴシック',sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    background: #F6F7F9;
-    line-height: 1.6;
-    letter-spacing: 0.15rem;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-variant-ligatures: none;
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background: #F6F7F9;
+  line-height: 1.6;
+  letter-spacing: 0.15rem;
 }
-a,a:hover {
-    text-decoration: none;
-    color: #231815;
-    transition: 0.5s;
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #231815;
+  transition: 0.5s;
 }
 
 img {
-    vertical-align: bottom;
-    width: 100%;
-    height: auto;
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
 }
 
 .d-fl {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-box;
-    display: -webkit-flexbox;
-    display: -moz-flexbox;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.sp{
-    display: none;
-    @include mqSp{
-        display: block;
-    }
-}
+.sp {
+  display: none;
 
-.pc{
+  @include mqSp {
     display: block;
-    @include mqSp{
-        display:none;
-    }
+  }
 }
 
-.site-main{
-  .cd-content-wrapper{
+.pc {
+  display: block;
+
+  @include mqSp {
+    display: none;
+  }
+}
+
+.site-main {
+  .cd-content-wrapper {
     padding: 37px 50px 20px;
     overflow: hidden;
     margin-left: 260px;
     margin-top: 99.9219px;
+    @include mqSp() {
+      padding: 0px 20px;
+      margin-top: 65px;
+      margin-left: 0;
+    }
+    .cd-content-wrapper-inn {
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+    }
   }
 }
-.cd-siteMap.breadcrumbs{
-    font-size: 10px;
+
+.cd-siteMap.breadcrumbs {
+  font-size: 10px;
+  color: #999999;
+  margin: 20px auto;
+
+  @include mqSp() {
+    color: #333333;
+    display: flex;
+    padding: 17px 0px;
+    margin: 0px;
+    flex-wrap: wrap;
+  }
+
+  a {
     color: #999999;
-    margin: 20px auto;
-  a{
-    color: #999999;
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
     }
   }
-  span.breadcrumbs-label{
+
+  a.home {
+    text-decoration: underline;
+  }
+
+  span.breadcrumbs-label {
     padding: 10px;
+
+    img {
+      width: 10px;
+      height: 10px;
+    }
   }
 }
-.page-ttl{
+
+
+.page-ttl {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.1rem;
+
+  @include mqSp() {
+    color: #333333;
+    font-size: 18px;
+    padding: 0px 0px 0px 15px;
+  }
 }
-.more-btn{
+
+.more-btn {
   text-align: center;
-  a{
+
+  a {
     display: inline-block;
     width: 100%;
     padding: 10px;
@@ -111,7 +156,8 @@ img {
     border: 2px solid #11A69C;
     box-sizing: border-box;
     position: relative;
-    &:after{
+
+    &:after {
       content: '';
       width: 5px;
       height: 5px;
@@ -126,23 +172,27 @@ img {
       right: 10px;
       margin-top: -3px;
     }
-    &:hover{
+
+    &:hover {
       color: #fff;
       border: 2px solid #11A69C;
       background: #11A69C;
-      &:after{
+
+      &:after {
         border-top: solid 1px #fff;
         border-right: solid 1px #fff;
       }
     }
   }
 }
-.more-btn02{
-  a{
+
+.more-btn02 {
+  a {
     color: #fff;
     border: 2px solid #11A69C;
     background: #11A69C;
-    &:hover{
+
+    &:hover {
       color: #11A69C;
       border: 2px solid #11A69C;
       background: #fff;
@@ -150,9 +200,10 @@ img {
   }
 }
 
-.submit-area-btn{
+.submit-area-btn {
   text-align: center;
-  button{
+
+  button {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -167,18 +218,21 @@ img {
     position: relative;
     opacity: 1;
     border: 1px solid #11A69C;
-    &:hover{
+
+    &:hover {
       background: #fff;
       color: #11A69C;
 
     }
 
   }
-  &.submit-area-btn02{
-    button{
+
+  &.submit-area-btn02 {
+    button {
       background: #11A69C;
       color: #fff;
-      &:hover{
+
+      &:hover {
         background: #fff;
         color: #11A69C;
 
@@ -190,26 +244,48 @@ img {
 .pagination-pagenavi {
   padding: 30px 0;
   text-align: center;
-  a,span {
+
+  a,
+  span {
     display: inline-block;
     text-decoration: none;
     padding: 8px;
     margin: 2px;
     font-size: 14px;
-    font-family: "Manrope-SemiBold" ,sans-serif;
+    font-family: "Manrope-SemiBold", sans-serif;
+
     &.current,
     &:hover {
-        color: #11A69C;
-        font-size: 14px;
-     &.previouspostslink,&.nextpostslink{
-       background: #fff;
-       border-radius: 50%;
-        svg{
-            #next{
-              fill: #000 !important;
-            }
+      color: #11A69C;
+      font-size: 14px;
+
+      &.previouspostslink,
+      &.nextpostslink {
+        background: #fff;
+        border-radius: 50%;
+
+        svg {
+          #next {
+            fill: #000 !important;
           }
-     }
+        }
+      }
     }
   }
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.m-0 {
+  margin: 0px !important;
+}
+
+.pl-0 {
+  padding-left: 0px !important;
 }

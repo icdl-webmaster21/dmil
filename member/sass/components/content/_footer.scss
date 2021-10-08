@@ -2,16 +2,31 @@
   &-ft {
     margin-left: 260px;
 
+    @include mqSp() {
+      margin: 0px;
+      padding: 0px 18px;
+      background: #F6F7F9;
+    }
+
     &-inn {
       width: 98%;
       margin: auto;
 
-      p {
+      @include mqSp() {
+        width: 100%;
+      }
+
+      p.copyright {
         font-size: 10px;
-        font-family: "Helvetica Neue" ,sans-serif;
+        font-family: "Helvetica Neue", sans-serif;
         font-weight: 400;
         padding-bottom: 15px;
         text-align: right;
+
+        @include mqSp() {
+          margin-top: 40px;
+          text-align: center;
+        }
       }
     }
   }
