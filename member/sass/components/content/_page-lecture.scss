@@ -43,12 +43,25 @@
         .lecutre-content-link {
           justify-content: space-between;
 
+          @include mqSp() {
+            flex-direction: column;
+          }
+
           .more-btn-l {
             width: 40%;
+
+            @include mqSp() {
+              width: 85px;
+            }
           }
 
           .more-btn-r {
             width: 56%;
+
+            @include mqSp() {
+              width: 130px;
+              margin-top: 10px;
+            }
           }
 
           .more-btn {
@@ -70,11 +83,11 @@
 .lecutre-details-content {
   .lecutre-details {
     article {
+      max-width: 700px;
       width: 100%;
       margin: 0;
 
       .lecutre-thumbnail {
-        max-width: 550px;
         width: 100%;
         margin: 30px 0;
       }
@@ -84,19 +97,7 @@
         box-sizing: border-box;
         position: relative;
 
-        &:after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -10%;
-          width: 150%;
-          height: 100%;
-          background: #fff;
-          z-index: -1;
-        }
-
         &-entry {
-          max-width: 550px;
           width: 100%;
           margin: 0;
 

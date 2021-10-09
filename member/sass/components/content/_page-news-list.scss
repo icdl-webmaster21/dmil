@@ -22,6 +22,7 @@
 
     @include mqSp() {
       padding: 25px 0 30px;
+      margin: 5px 0px 20px;
     }
 
     li {
@@ -58,6 +59,10 @@
 
       .news-content {
         width: calc(100% - 100px);
+
+        @include mqSp() {
+          width: 100%;
+        }
 
         h2 {
           font-family: 'ヒラギノ角ゴ ProN W6', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
@@ -111,6 +116,11 @@
     box-sizing: border-box;
     padding: 0 30px;
 
+    @include mqSp() {
+      margin-top: 5px;
+      padding: 0 15px;
+    }
+
     form {
       justify-content: space-between;
 
@@ -131,6 +141,12 @@
           font-family: 'ヒラギノ角ゴ ProN W6', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
           font-size: 12px;
           position: relative;
+
+          &:last-child {
+            @include mqSp() {
+              margin-bottom: 0px;
+            }
+          }
 
           input[type=checkbox] {
             opacity: 0;

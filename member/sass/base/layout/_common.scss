@@ -23,7 +23,7 @@ body {
   font-style: normal;
   background: #F6F7F9;
   line-height: 1.6;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.08rem;
 }
 
 a,
@@ -80,11 +80,13 @@ img {
     overflow: hidden;
     margin-left: 260px;
     margin-top: 99.9219px;
+
     @include mqSp() {
       padding: 0px 20px;
       margin-top: 65px;
       margin-left: 0;
     }
+
     .cd-content-wrapper-inn {
       width: 100%;
       max-width: 1000px;
@@ -137,7 +139,6 @@ img {
   @include mqSp() {
     color: #333333;
     font-size: 18px;
-    padding: 0px 0px 0px 15px;
   }
 }
 
@@ -169,7 +170,7 @@ img {
       transform: rotate(45deg);
       position: absolute;
       top: 50%;
-      right: 10px;
+      right: 16px;
       margin-top: -3px;
     }
 
@@ -274,18 +275,159 @@ img {
   }
 }
 
+.mx-unset {
+  max-width: unset !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .mb-0 {
   margin-bottom: 0px !important;
+
+  &-sp {
+    @include mqSp() {
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+.pt-0 {
+  padding-top: 0px !important;
+
+  &-sp {
+    @include mqSp() {
+      padding-top: 0px !important;
+    }
+  }
+}
+
+
+.pl-0 {
+  padding-left: 0px !important;
+}
+
+.px-15 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+
+  &-sp {
+    @include mqSp() {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+}
+
+.my-0 {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
 .mt-30 {
   margin-top: 30px !important;
 }
 
-.m-0 {
-  margin: 0px !important;
+.mr-30 {
+  margin-right: 30px !important;
 }
 
-.pl-0 {
-  padding-left: 0px !important;
+.ml-30 {
+  margin-left: 30px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+
+  &-sp {
+    @include mqSp() {
+      margin-top: 20px !important;
+    }
+  }
+}
+
+.mr-0 {
+  margin-right: 0px !important;
+
+  &-sp {
+    @include mqSp() {
+      margin-right: 0px !important;
+    }
+  }
+}
+
+.ml-0 {
+  margin-left: 0px !important;
+
+  &-sp {
+    @include mqSp() {
+      margin-left: 0px !important;
+    }
+  }
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+
+  &-sp {
+    @include mqSp() {
+      margin-top: 0px !important;
+    }
+  }
+}
+
+.m-0 {
+  margin: 0px !important;
+
+  &-sp {
+    @include mqSp() {
+      margin: 0px !important;
+    }
+  }
+}
+
+
+.w-100 {
+  width: 100% !important;
+}
+
+.b-shadow {
+  box-shadow: 0 0 20px rgba(188, 188, 188, 0.3);
+}
+
+.j-c-c {
+  justify-content: center !important;
+
+  &-sp {
+    @include mqSp() {
+      justify-content: center !important;
+    }
+  }
+}
+
+.j-c-b {
+  justify-content: space-between !important;
+
+  &-sp {
+    @include mqSp() {
+      justify-content: space-between !important;
+    }
+  }
+}
+
+.d-i-block {
+  display: inline-block !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mx-auto-sp {
+  @include mqSp() {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }

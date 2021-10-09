@@ -69,7 +69,7 @@ body {
   font-style: normal;
   background: #F6F7F9;
   line-height: 1.6;
-  letter-spacing: 0.15rem; }
+  letter-spacing: 0.08rem; }
 
 a,
 a:hover {
@@ -157,8 +157,7 @@ img {
   @media screen and (max-width: 1260px) {
     .page-ttl {
       color: #333333;
-      font-size: 18px;
-      padding: 0px 0px 0px 15px; } }
+      font-size: 18px; } }
 
 .more-btn {
   text-align: center; }
@@ -186,7 +185,7 @@ img {
       transform: rotate(45deg);
       position: absolute;
       top: 50%;
-      right: 10px;
+      right: 16px;
       margin-top: -3px; }
     .more-btn a:hover {
       color: #fff;
@@ -262,17 +261,107 @@ img {
         .pagination-pagenavi span:hover.nextpostslink svg #next {
           fill: #000 !important; }
 
+.mx-unset {
+  max-width: unset !important; }
+
+.text-center {
+  text-align: center; }
+
 .mb-0 {
   margin-bottom: 0px !important; }
+  @media screen and (max-width: 1260px) {
+    .mb-0-sp {
+      margin-bottom: 0px !important; } }
+
+.pt-0 {
+  padding-top: 0px !important; }
+  @media screen and (max-width: 1260px) {
+    .pt-0-sp {
+      padding-top: 0px !important; } }
+
+.pl-0 {
+  padding-left: 0px !important; }
+
+.px-15 {
+  padding-left: 15px !important;
+  padding-right: 15px !important; }
+  @media screen and (max-width: 1260px) {
+    .px-15-sp {
+      padding-left: 15px !important;
+      padding-right: 15px !important; } }
+
+.my-0 {
+  margin-left: 0px !important;
+  margin-right: 0px !important; }
 
 .mt-30 {
   margin-top: 30px !important; }
 
+.mr-30 {
+  margin-right: 30px !important; }
+
+.ml-30 {
+  margin-left: 30px !important; }
+
+.mt-20 {
+  margin-top: 20px !important; }
+  @media screen and (max-width: 1260px) {
+    .mt-20-sp {
+      margin-top: 20px !important; } }
+
+.mr-0 {
+  margin-right: 0px !important; }
+  @media screen and (max-width: 1260px) {
+    .mr-0-sp {
+      margin-right: 0px !important; } }
+
+.ml-0 {
+  margin-left: 0px !important; }
+  @media screen and (max-width: 1260px) {
+    .ml-0-sp {
+      margin-left: 0px !important; } }
+
+.mt-0 {
+  margin-top: 0px !important; }
+  @media screen and (max-width: 1260px) {
+    .mt-0-sp {
+      margin-top: 0px !important; } }
+
 .m-0 {
   margin: 0px !important; }
+  @media screen and (max-width: 1260px) {
+    .m-0-sp {
+      margin: 0px !important; } }
 
-.pl-0 {
-  padding-left: 0px !important; }
+.w-100 {
+  width: 100% !important; }
+
+.b-shadow {
+  box-shadow: 0 0 20px rgba(188, 188, 188, 0.3); }
+
+.j-c-c {
+  justify-content: center !important; }
+  @media screen and (max-width: 1260px) {
+    .j-c-c-sp {
+      justify-content: center !important; } }
+
+.j-c-b {
+  justify-content: space-between !important; }
+  @media screen and (max-width: 1260px) {
+    .j-c-b-sp {
+      justify-content: space-between !important; } }
+
+.d-i-block {
+  display: inline-block !important; }
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+@media screen and (max-width: 1260px) {
+  .mx-auto-sp {
+    margin-left: auto !important;
+    margin-right: auto !important; } }
 
 .l-hd {
   width: 100%;
@@ -527,7 +616,7 @@ aside.active-aside {
           .l-hd-inn .main-side-nav-sp nav ul li.sp-menu-mypage:after {
             content: "";
             position: absolute;
-            left: 30%;
+            left: 35%;
             top: 25px;
             box-sizing: border-box;
             height: 8px;
@@ -564,7 +653,8 @@ aside.active-aside {
   padding: 20px 0 16px; }
   @media screen and (max-width: 1260px) {
     .news-list-content .news-list {
-      padding: 25px 0 30px; } }
+      padding: 25px 0 30px;
+      margin: 5px 0px 20px; } }
   .news-list-content .news-list li {
     width: 96%;
     margin: auto;
@@ -592,6 +682,9 @@ aside.active-aside {
       line-height: 1.8; }
     .news-list-content .news-list li .news-content {
       width: calc(100% - 100px); }
+      @media screen and (max-width: 1260px) {
+        .news-list-content .news-list li .news-content {
+          width: 100%; } }
       .news-list-content .news-list li .news-content h2 {
         font-family: 'ヒラギノ角ゴ ProN W6', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
         font-size: 14px;
@@ -624,6 +717,10 @@ aside.active-aside {
   background: #fff;
   box-sizing: border-box;
   padding: 0 30px; }
+  @media screen and (max-width: 1260px) {
+    .news-list-content .message-box {
+      margin-top: 5px;
+      padding: 0 15px; } }
   .news-list-content .message-box form {
     justify-content: space-between; }
     @media screen and (max-width: 1260px) {
@@ -640,6 +737,9 @@ aside.active-aside {
         font-family: 'ヒラギノ角ゴ ProN W6', 'メイリオ', 'Meiryo', 'ＭＳ ゴシック', sans-serif;
         font-size: 12px;
         position: relative; }
+        @media screen and (max-width: 1260px) {
+          .news-list-content .message-box form .select-box-inn:last-child {
+            margin-bottom: 0px; } }
         .news-list-content .message-box form .select-box-inn input[type=checkbox] {
           opacity: 0;
           position: absolute;
@@ -857,7 +957,7 @@ aside.active-aside {
           -ms-transform: rotate(227deg);
           -webkit-transform: rotate(227deg);
           transform: rotate(227deg);
-          left: 10px; }
+          left: 16px; }
 .news-details-content .news-list {
   margin: 46px 0;
   overflow: hidden;
@@ -921,8 +1021,7 @@ aside.active-aside {
       color: #11A69C;
       text-decoration: underline; }
   .news-details-content .news-list .more-btn {
-    width: 250px;
-    margin: 20px auto 0px; }
+    width: 250px; }
     .news-details-content .news-list .more-btn a {
       border-radius: 60px; }
 
@@ -958,10 +1057,20 @@ aside.active-aside {
         line-height: 1.6; }
       .lecutre-list-content .lecutre-list article .lecutre-content .lecutre-content-link {
         justify-content: space-between; }
+        @media screen and (max-width: 1260px) {
+          .lecutre-list-content .lecutre-list article .lecutre-content .lecutre-content-link {
+            flex-direction: column; } }
         .lecutre-list-content .lecutre-list article .lecutre-content .lecutre-content-link .more-btn-l {
           width: 40%; }
+          @media screen and (max-width: 1260px) {
+            .lecutre-list-content .lecutre-list article .lecutre-content .lecutre-content-link .more-btn-l {
+              width: 85px; } }
         .lecutre-list-content .lecutre-list article .lecutre-content .lecutre-content-link .more-btn-r {
           width: 56%; }
+          @media screen and (max-width: 1260px) {
+            .lecutre-list-content .lecutre-list article .lecutre-content .lecutre-content-link .more-btn-r {
+              width: 130px;
+              margin-top: 10px; } }
         .lecutre-list-content .lecutre-list article .lecutre-content .lecutre-content-link .more-btn a {
           padding: 6px;
           font-size: 12px; }
@@ -969,27 +1078,17 @@ aside.active-aside {
             content: none; }
 
 .lecutre-details-content .lecutre-details article {
+  max-width: 700px;
   width: 100%;
   margin: 0; }
   .lecutre-details-content .lecutre-details article .lecutre-thumbnail {
-    max-width: 550px;
     width: 100%;
     margin: 30px 0; }
   .lecutre-details-content .lecutre-details article .lecutre-content {
     padding: 30px 0;
     box-sizing: border-box;
     position: relative; }
-    .lecutre-details-content .lecutre-details article .lecutre-content:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -10%;
-      width: 150%;
-      height: 100%;
-      background: #fff;
-      z-index: -1; }
     .lecutre-details-content .lecutre-details article .lecutre-content-entry {
-      max-width: 550px;
       width: 100%;
       margin: 0; }
       @media screen and (max-width: 1260px) {
@@ -1092,10 +1191,11 @@ aside.active-aside {
   width: 102%; }
   .journal-list-content .journal-list article {
     width: 24%;
-    margin: 0.5% 0.5% 20px; }
+    margin: 0.5% 0.5% 12px; }
     @media screen and (max-width: 1260px) {
       .journal-list-content .journal-list article {
-        width: 49%; } }
+        width: 49%;
+        margin-bottom: 10px; } }
     .journal-list-content .journal-list article .journal-content {
       padding: 13px 10px;
       box-sizing: border-box;
@@ -1343,17 +1443,21 @@ aside.active-aside {
   .register-content .register-infornation form .register-container-inn dl dt {
     font-size: 14px;
     background: #F6F7F9;
-    padding: 15px;
-    width: 200px;
+    padding: 12px;
+    width: 220px;
     margin: 5px 10px 5px 0;
     text-align: center;
     border-radius: 10px;
-    height: 56px;
-    min-height: 56px;
-    color: #333333; }
+    color: #333333;
+    max-height: 46px;
+    box-sizing: border-box;
+    letter-spacing: 0;
+    position: relative; }
     @media screen and (max-width: 1260px) {
       .register-content .register-infornation form .register-container-inn dl dt {
-        width: 100%; } }
+        width: 100%;
+        margin-right: 0;
+        font-size: 16px; } }
     .register-content .register-infornation form .register-container-inn dl dt .required {
       font-size: 12px;
       color: #FF0000;
@@ -1363,14 +1467,20 @@ aside.active-aside {
       @media screen and (max-width: 1260px) {
         .register-content .register-infornation form .register-container-inn dl dt .required {
           font-size: 10px; } }
+  .register-content .register-infornation form .register-container-inn dl dt.no-bg {
+    padding: 0px !important;
+    height: 0px !important;
+    min-height: unset !important;
+    background-color: transparent !important; }
   .register-content .register-infornation form .register-container-inn dl dd {
-    width: calc(100% - 210px);
+    width: calc(100% - 230px);
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 14px;
     margin: 5px 0; }
     @media screen and (max-width: 1260px) {
       .register-content .register-infornation form .register-container-inn dl dd {
-        width: 100%; } }
+        width: 100%;
+        font-size: 16px; } }
     .register-content .register-infornation form .register-container-inn dl dd input,
     .register-content .register-infornation form .register-container-inn dl dd p,
     .register-content .register-infornation form .register-container-inn dl dd tel,
@@ -1378,21 +1488,25 @@ aside.active-aside {
       display: block;
       width: 100%;
       border-radius: 10px;
-      padding: 17px;
+      padding: 13px 17px;
       border: 2px solid #F6F7F9;
       box-sizing: border-box;
       appearance: none;
       -moz-appearance: none;
       -webkit-appearance: none;
-      font-size: 16px; }
+      font-size: 14px; }
+      @media screen and (max-width: 1260px) {
+        .register-content .register-infornation form .register-container-inn dl dd input,
+        .register-content .register-infornation form .register-container-inn dl dd p,
+        .register-content .register-infornation form .register-container-inn dl dd tel,
+        .register-content .register-infornation form .register-container-inn dl dd textarea {
+          font-size: 16px;
+          padding: 12px 17px; } }
       .register-content .register-infornation form .register-container-inn dl dd input:focus,
       .register-content .register-infornation form .register-container-inn dl dd p:focus,
       .register-content .register-infornation form .register-container-inn dl dd tel:focus,
       .register-content .register-infornation form .register-container-inn dl dd textarea:focus {
         outline: none; }
-    .register-content .register-infornation form .register-container-inn dl dd input,
-    .register-content .register-infornation form .register-container-inn dl dd textarea {
-      font-size: 14px; }
     .register-content .register-infornation form .register-container-inn dl dd textarea {
       overflow: hidden;
       resize: none; }
@@ -1415,7 +1529,13 @@ aside.active-aside {
       width: 133px; }
       @media screen and (max-width: 1260px) {
         .register-content .register-infornation form .register-container-inn dl dd .select-area {
-          width: 32%; } }
+          width: 100px;
+          margin-right: 0; } }
+      @media screen and (max-width: 420px) {
+        .register-content .register-infornation form .register-container-inn dl dd .select-area {
+          width: 95px;
+          margin-right: 0;
+          margin-bottom: 5px; } }
       .register-content .register-infornation form .register-container-inn dl dd .select-area select {
         display: inline-block;
         width: 100%;
@@ -1425,7 +1545,12 @@ aside.active-aside {
         border-radius: 10px;
         padding: 15px;
         border: 2px solid #F6F7F9;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        background: #fff; }
+        @media screen and (max-width: 1260px) {
+          .register-content .register-infornation form .register-container-inn dl dd .select-area select {
+            font-size: 16px;
+            padding: 12px 15px; } }
         .register-content .register-infornation form .register-container-inn dl dd .select-area select:focus {
           outline: none; }
       .register-content .register-infornation form .register-container-inn dl dd .select-area:after {
@@ -1565,16 +1690,15 @@ aside.active-aside {
   display: block;
   width: 100%;
   border-radius: 10px;
-  padding: 15px;
+  padding: 12px 15px;
   box-sizing: border-box;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  color: #333333;
-  min-height: 56px; }
+  color: #333333; }
   @media screen and (max-width: 1260px) {
     .register-content .register-infornation form.confirm-container .input-value {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: bold; } }
 @media screen and (max-width: 1260px) {
   .register-content .register-infornation form.confirm-container .input-value.p-0 {
@@ -1583,13 +1707,12 @@ aside.active-aside {
   display: block;
   width: 100%;
   border-radius: 10px;
-  padding: 15px;
+  padding: 12px 15px;
   box-sizing: border-box;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  color: #333333;
-  min-height: 56px; }
+  color: #333333; }
 .register-content .register-infornation form.mypage-container .w-sm {
   width: 200px !important; }
 .register-content .register-infornation form.mypage-container .select {
@@ -1599,7 +1722,7 @@ aside.active-aside {
     border-radius: 10px;
     font-size: 14px;
     min-width: 134px;
-    padding: 15px;
+    padding: 12px 15px;
     color: #333333;
     border: 2px solid #F6F7F9; }
     @media screen and (max-width: 1260px) {
@@ -1614,6 +1737,9 @@ aside.active-aside {
 .register-content .register-infornation form.mypage-container .file_input {
   align-items: center;
   flex-wrap: nowrap; }
+  @media screen and (max-width: 1260px) {
+    .register-content .register-infornation form.mypage-container .file_input {
+      flex-wrap: wrap; } }
 .register-content .register-infornation form.mypage-container .d-none {
   display: none; }
 .register-content .register-infornation form.mypage-container .input_file_name {
@@ -1623,7 +1749,9 @@ aside.active-aside {
   padding-left: 15px; }
   @media screen and (max-width: 1260px) {
     .register-content .register-infornation form.mypage-container .input_file_name {
-      width: 100%; } }
+      min-width: unset;
+      width: 100%;
+      margin-bottom: 10px; } }
 .register-content .register-infornation form.mypage-container .input_file_btn {
   appearance: none;
   -moz-appearance: none;
@@ -1643,7 +1771,8 @@ aside.active-aside {
       min-width: 140px; } }
 .register-content .register-infornation form.mypage-container .submit-area-btn {
   max-width: unset;
-  margin: 30px auto 0; }
+  width: 100%;
+  margin: 30px 0 0; }
 .register-content .register-infornation form .submit-area-btn {
   max-width: 270px;
   margin: 30px auto 60px;
@@ -1652,12 +1781,19 @@ aside.active-aside {
   .register-content .register-infornation form .submit-area-btn button {
     cursor: pointer;
     position: relative;
-    width: 110px;
+    width: 160px;
     margin: 0;
     display: inline-block;
     border-radius: 45px;
     background: #fff;
     color: #11a69c; }
+    @media screen and (max-width: 1260px) {
+      .register-content .register-infornation form .submit-area-btn button {
+        width: 150px; } }
+    @media screen and (max-width: 420px) {
+      .register-content .register-infornation form .submit-area-btn button {
+        width: 130px;
+        margin: 10px 0; } }
     .register-content .register-infornation form .submit-area-btn button:hover {
       background: #11a69c;
       color: #fff; }
@@ -1693,7 +1829,7 @@ aside.active-aside {
   .register-content .register-infornation form .submit-area-btn button.no-arw::after {
     display: none; }
 .register-content .register-infornation form .submit-area-btn.b-center {
-  justify-content: center; }
+  justify-content: flex-start; }
 
 .modal-finished .finished-dialog-box {
   overflow: hidden;
@@ -1757,6 +1893,9 @@ aside.active-aside {
   background: #fff;
   box-sizing: border-box;
   padding: 34px; }
+  @media screen and (max-width: 1260px) {
+    .login-content-inn {
+      padding: 20px; } }
   .login-content-inn .page-ttl {
     text-align: center;
     margin-bottom: 32px; }
@@ -1797,6 +1936,9 @@ aside.active-aside {
   margin: 40px 0 0;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 1260px) {
+    .register-content .mypage-wrap {
+      margin: 15px 0 0; } }
   .register-content .mypage-wrap-list {
     max-width: 680px;
     width: calc(100% - 90px);
@@ -1954,7 +2096,10 @@ aside.active-aside {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    font-size: 16px; }
+    font-size: 14px; }
+    @media screen and (max-width: 1260px) {
+      .register-content .mypage-personal-card.mypage-personal-cardEdit input {
+        font-size: 16px; } }
     .register-content .mypage-personal-card.mypage-personal-cardEdit input:focus {
       outline: none; }
   .register-content .mypage-personal-card.mypage-personal-cardEdit .select-area {
@@ -1996,7 +2141,7 @@ aside.active-aside {
   .register-content .mypage-personal-card.mypage-personal-cardEdit .addcard-date {
     justify-content: space-between; }
   .register-content .mypage-personal-card.mypage-personal-cardEdit .oldCard-edit {
-    width: 500px;
+    width: 310px;
     padding-right: 50px;
     margin-right: 50px;
     border-right: 1px solid #EBEBEB; }
@@ -2013,25 +2158,25 @@ aside.active-aside {
       .register-content .mypage-personal-card.mypage-personal-cardEdit .oldCard-edit dl dt {
         font-size: 14px;
         background: #F6F7F9;
-        padding: 15px;
+        padding: 12px 15px;
         width: 150px;
-        margin: 5px 10px 5px 0;
+        margin: 5px 21px 5px 0;
         text-align: center;
         border-radius: 10px;
-        height: 56px;
-        min-height: 56px;
         color: #333333; }
         @media screen and (max-width: 1260px) {
           .register-content .mypage-personal-card.mypage-personal-cardEdit .oldCard-edit dl dt {
-            width: 110px; } }
+            width: 100%; } }
       .register-content .mypage-personal-card.mypage-personal-cardEdit .oldCard-edit dl dd {
-        width: calc(100% - 160px);
+        width: calc(100% - 171px);
         box-sizing: border-box;
-        font-size: 16px;
-        margin: 5px 0; }
+        font-size: 14px;
+        margin: 5px 0;
+        letter-spacing: 0; }
         @media screen and (max-width: 1260px) {
           .register-content .mypage-personal-card.mypage-personal-cardEdit .oldCard-edit dl dd {
-            width: calc(100% - 120px); } }
+            width: 100%;
+            padding: 12px 15px; } }
   @media screen and (max-width: 1260px) {
     .register-content .mypage-personal-card.mypage-personal-cardEdit .newcard-add {
       width: 100%; } }
@@ -2117,14 +2262,28 @@ aside.active-aside {
     margin: auto;
     padding: 47px 80px;
     text-align: center; }
+    @media screen and (max-width: 1260px) {
+      .modal-logout .logout-dialog-box {
+        padding: 30px 10px 35px; } }
     .modal-logout .logout-dialog-box p {
       font-size: 14px;
       line-height: 1.5;
       margin: 30px 0; }
     .modal-logout .logout-dialog-box .more-fl {
       justify-content: space-between; }
+      @media screen and (max-width: 1260px) {
+        .modal-logout .logout-dialog-box .more-fl {
+          flex-direction: column; } }
       .modal-logout .logout-dialog-box .more-fl .more-btn {
         width: 48%; }
+        @media screen and (max-width: 1260px) {
+          .modal-logout .logout-dialog-box .more-fl .more-btn {
+            width: 100%;
+            max-width: 200px;
+            margin: auto; } }
+        @media screen and (max-width: 1260px) {
+          .modal-logout .logout-dialog-box .more-fl .more-btn:last-child {
+            margin-top: 20px; } }
         .modal-logout .logout-dialog-box .more-fl .more-btn a {
           border-radius: 10px;
           letter-spacing: 0.12rem; }
@@ -2160,7 +2319,7 @@ aside.active-aside {
     color: #fff;
     font-weight: 600; }
   .mypage-plan.mypage-plan-change .mypage-plan-inn {
-    margin: 20px;
+    margin: 25px;
     padding-bottom: 24px;
     border-bottom: 1px solid #707070; }
     .mypage-plan.mypage-plan-change .mypage-plan-inn p {
@@ -2176,7 +2335,7 @@ aside.active-aside {
     .mypage-plan.mypage-plan-change .mypage-plan-inn h3 {
       font-size: 12px;
       font-weight: 600;
-      margin-top: 22px; }
+      margin-top: 25px; }
     .mypage-plan.mypage-plan-change .mypage-plan-inn ul {
       justify-content: space-between;
       max-width: 420px; }
@@ -2228,7 +2387,7 @@ aside.active-aside {
       border-radius: 10px; }
 
 .director-g-content .director-g-wrap {
-  margin: 15px 0 30px;
+  margin: 20px 0 30px;
   overflow: hidden;
   border-radius: 30px;
   background: #fff;
@@ -2238,7 +2397,7 @@ aside.active-aside {
     .director-g-content .director-g-wrap {
       padding: 30px 15px 40px; } }
   .director-g-content .director-g-wrap-thumbnail {
-    max-width: 700px;
+    max-width: 500px;
     width: 90%;
     margin: 0 auto 50px; }
     @media screen and (max-width: 1260px) {
@@ -2279,7 +2438,7 @@ aside.active-aside {
       margin-left: 30px; }
 
 .pp-content .pp-wrap {
-  margin: 15px 0 30px;
+  margin: 20px 0 30px;
   overflow: hidden;
   border-radius: 30px;
   background: #fff;

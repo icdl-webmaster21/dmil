@@ -16,3 +16,8 @@
         @content;
     }
 }
+@mixin mqSsp() {
+    @media screen and (max-width: 420px) {
+        @content;
+    }
+}

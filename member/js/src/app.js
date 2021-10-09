@@ -1,7 +1,7 @@
 $('.lecutre-recommended-list').slick({
   lazyLoad: 'ondemand',
-  slidesToShow: 4.5,
-  slidesToScroll: 4,
+  slidesToShow: 3.5,
+  slidesToScroll: 3,
   dots: false,
   arrows: false,
   infinite: false,
@@ -17,7 +17,7 @@ $('.lecutre-recommended-list').slick({
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 1.3,
         slidesToScroll: 1
       }
     }

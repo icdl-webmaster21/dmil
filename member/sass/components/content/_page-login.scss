@@ -8,6 +8,9 @@
     background: #fff;
     box-sizing: border-box;
     padding: 34px;
+    @include mqSp() {
+      padding: 20px;
+    }
     .page-ttl{
       text-align: center;
       margin-bottom: 32px;

@@ -6,6 +6,10 @@
       justify-content: space-between;
       align-items: center;
 
+      @include mqSp {
+        margin: 15px 0 0;
+      }
+
       &-list {
         max-width: 680px;
         width: calc(100% - 90px);
@@ -240,8 +244,10 @@
           appearance: none;
           -moz-appearance: none;
           -webkit-appearance: none;
-          font-size: 16px;
-
+          font-size: 14px;
+          @include mqSp() {
+            font-size: 16px;
+          }
           &:focus {
             outline: none;
           }
@@ -300,7 +306,7 @@
         }
 
         .oldCard-edit {
-          width: 500px;
+          width: 310px;
           padding-right: 50px;
           margin-right: 50px;
           border-right: 1px solid #EBEBEB;
@@ -320,28 +326,28 @@
             dt {
               font-size: 14px;
               background: #F6F7F9;
-              padding: 15px;
+              padding: 12px 15px;
               width: 150px;
-              margin: 5px 10px 5px 0;
+              margin: 5px 21px 5px 0;
               text-align: center;
               border-radius: 10px;
-              height: 56px;
-              min-height: 56px;
               color: #333333;
 
               @include mqSp() {
-                width: 110px;
+                width: 100%;
               }
             }
 
             dd {
-              width: calc(100% - 160px);
+              width: calc(100% - 171px);
               box-sizing: border-box;
-              font-size: 16px;
+              font-size: 14px;
               margin: 5px 0;
+              letter-spacing: 0;
 
               @include mqSp() {
-                width: calc(100% - 120px);
+                width: 100%;
+                padding: 12px 15px; 
               }
             }
           }
@@ -487,6 +493,9 @@
     margin: auto;
     padding: 47px 80px;
     text-align: center;
+    @include mqSp() {
+      padding: 30px 10px 35px;
+    }
 
     p {
       font-size: 14px;
@@ -497,8 +506,24 @@
     .more-fl {
       justify-content: space-between;
 
+      @include mqSp() {
+        flex-direction: column;
+      }
+
       .more-btn {
         width: 48%;
+
+        @include mqSp() {
+          width: 100%;
+          max-width: 200px;
+          margin: auto;
+        }
+
+        &:last-child {
+          @include mqSp() {
+            margin-top: 20px;
+          }
+        }
 
         a {
           border-radius: 10px;
@@ -567,7 +592,7 @@
       }
 
       &-inn {
-        margin: 20px;
+        margin: 25px;
         padding-bottom: 24px;
         border-bottom: 1px solid #707070;
 
@@ -592,7 +617,7 @@
         h3 {
           font-size: 12px;
           font-weight: 600;
-          margin-top: 22px;
+          margin-top: 25px;
         }
 
         ul {

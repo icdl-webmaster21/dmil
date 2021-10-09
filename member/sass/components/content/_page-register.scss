@@ -45,17 +45,20 @@
             dt {
               font-size: 14px;
               background: #F6F7F9;
-              padding: 15px;
-              width: 200px;
+              padding: 12px;
+              width: 220px;
               margin: 5px 10px 5px 0;
               text-align: center;
               border-radius: 10px;
-              height: 56px;
-              min-height: 56px;
               color: #333333;
-
+              max-height: 46px;
+              box-sizing: border-box;
+              letter-spacing: 0;
+              position: relative;
               @include mqSp() {
                 width: 100%;
+                margin-right: 0;
+                font-size: 16px;
               }
 
               .required {
@@ -71,14 +74,22 @@
               }
             }
 
+            dt.no-bg {
+              padding: 0px !important;
+              height: 0px !important;
+              min-height: unset !important;
+              background-color: transparent !important;
+            }
+
             dd {
-              width: calc(100% - 210px);
+              width: calc(100% - 230px);
               box-sizing: border-box;
-              font-size: 16px;
+              font-size: 14px;
               margin: 5px 0;
 
               @include mqSp() {
                 width: 100%;
+                font-size: 16px;
               }
 
               input,
@@ -88,22 +99,20 @@
                 display: block;
                 width: 100%;
                 border-radius: 10px;
-                padding: 17px;
+                padding: 13px 17px;
                 border: 2px solid #F6F7F9;
                 box-sizing: border-box;
                 appearance: none;
                 -moz-appearance: none;
                 -webkit-appearance: none;
-                font-size: 16px;
-
+                font-size: 14px;
+                @include mqSp() {
+                  font-size: 16px;
+                  padding: 12px 17px;
+                }
                 &:focus {
                   outline: none;
                 }
-              }
-
-              input,
-              textarea {
-                font-size: 14px;
               }
 
               textarea {
@@ -134,11 +143,15 @@
                 position: relative;
                 margin-right: 10px;
                 width: 133px;
-
-                @include mqSp() {
-                  width: 32%;
+                @include mqSp(){
+                  width: 100px;
+                  margin-right: 0;
                 }
-
+                @include mqSsp(){
+                  width: 95px;
+                  margin-right: 0;
+                  margin-bottom: 5px;
+                }
                 select {
                   display: inline-block;
                   width: 100%;
@@ -149,7 +162,11 @@
                   padding: 15px;
                   border: 2px solid #F6F7F9;
                   box-sizing: border-box;
-
+                  background: #fff;
+                  @include mqSp(){
+                    font-size: 16px;
+                    padding: 12px 15px;
+                  }
                   &:focus {
                     outline: none;
                   }
@@ -352,16 +369,15 @@
           display: block;
           width: 100%;
           border-radius: 10px;
-          padding: 15px;
+          padding: 12px 15px;
           box-sizing: border-box;
           appearance: none;
           -moz-appearance: none;
           -webkit-appearance: none;
           color: #333333;
-          min-height: 56px;
 
           @include mqSp() {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: bold;
           }
         }
@@ -378,13 +394,12 @@
           display: block;
           width: 100%;
           border-radius: 10px;
-          padding: 15px;
+          padding: 12px 15px;
           box-sizing: border-box;
           appearance: none;
           -moz-appearance: none;
           -webkit-appearance: none;
           color: #333333;
-          min-height: 56px;
         }
 
         .w-sm {
@@ -399,7 +414,7 @@
             border-radius: 10px;
             font-size: 14px;
             min-width: 134px;
-            padding: 15px;
+            padding: 12px 15px;
             color: #333333;
             border: 2px solid #F6F7F9;
 
@@ -426,6 +441,9 @@
         .file_input {
           align-items: center;
           flex-wrap: nowrap;
+          @include mqSp() {
+            flex-wrap: wrap;
+          }
         }
 
         .d-none {
@@ -439,7 +457,9 @@
           padding-left: 15px;
 
           @include mqSp() {
+            min-width: unset;
             width: 100%;
+            margin-bottom: 10px;
           }
         }
 
@@ -465,7 +485,8 @@
 
         .submit-area-btn {
           max-width: unset;
-          margin: 30px auto 0;
+          width: 100%;
+          margin: 30px 0 0;
         }
       }
 
@@ -478,13 +499,20 @@
         button {
           cursor: pointer;
           position: relative;
-          width: 110px;
+          width: 160px;
           margin: 0;
           display: inline-block;
           border-radius: 45px;
           background: #fff;
           color: #11a69c;
 
+          @include mqSp() {
+            width: 150px;
+          }
+          @include mqSsp() {
+            width: 130px;
+            margin: 10px 0;
+          }
           &:hover {
             background: #11a69c;
             color: #fff;
@@ -507,7 +535,6 @@
           }
 
         }
-
         button.prev-btn {
           &::after {
             content: '';
@@ -536,7 +563,7 @@
       }
 
       .submit-area-btn.b-center {
-        justify-content: center;
+        justify-content: flex-start;
       }
     }
   }
