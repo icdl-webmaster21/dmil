@@ -137,17 +137,18 @@
                 <div class="register-infornation">
                   <div class="mypage-wrap d-fl">
                     <div class="mypage-wrap-list pc">
-                      <ul class="d-fl">
-                        <li class="mypage-options personal-infornation active">会員情報</li>
-                        <li class="mypage-options payment-history">プラン変更</li>
+                      <ul class="d-fl tab-list">
+                        <li class="mypage-options personal-infornation tab-menu tab-active" data-tab="tab_information">
+                          会員情報
+                        </li>
+                        <li class="mypage-options payment-history tab-menu" data-tab="tab_payment">プラン変更</li>
                       </ul>
                     </div>
-                    <div class="mypage-wrap-list sp">
+                    <div class="mypage-wrap-list tab-list sp">
                       <div class="select-styled">会員情報</div>
-                      <ul class="select-options" style="display: none;">
-                        <li>単位確認</li>
-                        <li>お支払い</li>
-                        <li>クレジットカード設定</li>
+                      <ul class="select-options tab-list" style="display: none;">
+                        <li class="tab-menu tab-active" data-tab="tab_information">会員情報</li>
+                        <li class="tab-menu" data-tab="tab_payment">プラン変更</li>
                       </ul>
                     </div>
                     <div class="mypage-wrap-logout">
@@ -254,6 +255,19 @@
                         </dl>
                         <div class="submit-area-btn d-fl j-c-c-sp">
                           <button type="submit" name="button" class="no-arw">確定</button>
+                        </div>
+                      </div>
+                    </form>
+                  </section>
+                  <section class="mypage-personal-infornation tab-content" data-tabcontent="tab_payment">
+                    <form class="register-container mypage-container">
+                      <div class="register-container-inn mt-30">
+                        <dl class="d-fl">
+                          <dt>現在の会員種別</dt>
+                          <dd><input type="text" class="inpt-value w-sm" placeholder="無料会員"></dd>
+                        </dl>
+                        <div class="submit-area-btn submit-area-btn02">
+                          <button type="submit" name="button">正会員へ変更</button>
                         </div>
                       </div>
                     </form>
