@@ -55,6 +55,7 @@
               box-sizing: border-box;
               letter-spacing: 0;
               position: relative;
+
               @include mqSp() {
                 width: 100%;
                 margin-right: 0;
@@ -106,10 +107,12 @@
                 -moz-appearance: none;
                 -webkit-appearance: none;
                 font-size: 14px;
+
                 @include mqSp() {
                   font-size: 16px;
                   padding: 12px 17px;
                 }
+
                 &:focus {
                   outline: none;
                 }
@@ -143,15 +146,18 @@
                 position: relative;
                 margin-right: 10px;
                 width: 133px;
-                @include mqSp(){
+
+                @include mqSp() {
                   width: 100px;
                   margin-right: 0;
                 }
-                @include mqSsp(){
+
+                @include mqSsp() {
                   width: 95px;
                   margin-right: 0;
                   margin-bottom: 5px;
                 }
+
                 select {
                   display: inline-block;
                   width: 100%;
@@ -163,10 +169,12 @@
                   border: 2px solid #F6F7F9;
                   box-sizing: border-box;
                   background: #fff;
-                  @include mqSp(){
+
+                  @include mqSp() {
                     font-size: 16px;
                     padding: 12px 15px;
                   }
+
                   &:focus {
                     outline: none;
                   }
@@ -441,6 +449,7 @@
         .file_input {
           align-items: center;
           flex-wrap: nowrap;
+
           @include mqSp() {
             flex-wrap: wrap;
           }
@@ -509,10 +518,12 @@
           @include mqSp() {
             width: 150px;
           }
+
           @include mqSsp() {
             width: 130px;
             margin: 10px 0;
           }
+
           &:hover {
             background: #11a69c;
             color: #fff;
@@ -535,6 +546,7 @@
           }
 
         }
+
         button.prev-btn {
           &::after {
             content: '';

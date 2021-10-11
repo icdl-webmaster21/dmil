@@ -137,26 +137,29 @@
                 <div class="register-infornation">
                   <div class="mypage-wrap d-fl">
                     <div class="mypage-wrap-list pc">
-                      <ul class="d-fl">
-                        <li class="mypage-options personal-infornation active">会員情報</li>
-                        <li class="mypage-options payment-history">お支払い</li>
-                        <li class="mypage-options creditCard-infornation">クレジットカード設定</li>
-                        <li class="mypage-options personal-points">DMIL単位</li>
+                      <ul class="d-fl tab-list">
+                        <li class="mypage-options personal-infornation tab-menu tab-active" data-tab="tab_information">
+                          会員情報
+                        </li>
+                        <li class="mypage-options payment-history tab-menu" data-tab="tab_payment">お支払い</li>
+                        <li class="mypage-options creditCard-infornation tab-menu" data-tab="tab_card">クレジットカード設定</li>
+                        <li class="mypage-options personal-points tab-menu" data-tab="tab_unit">DMIL単位</li>
                       </ul>
                     </div>
-                    <div class="mypage-wrap-list sp">
+                    <div class="mypage-wrap-list tab-list sp">
                       <div class="select-styled">会員情報</div>
-                      <ul class="select-options" style="display: none;">
-                        <li>単位確認</li>
-                        <li>お支払い</li>
-                        <li>クレジットカード設定</li>
+                      <ul class="select-options tab-list" style="display: none;">
+                        <li class="tab-menu tab-active" data-tab="tab_information">会員情報</li>
+                        <li class="tab-menu" data-tab="tab_payment">お支払い</li>
+                        <li class="tab-menu" data-tab="tab_card">クレジットカード設定</li>
+                        <li class="tab-menu" data-tab="tab_unit">DMIL単位</li>
                       </ul>
                     </div>
                     <div class="mypage-wrap-logout">
                       <a href="#logout" rel="alternate">ログアウト</a>
                     </div>
                   </div>
-                  <section class="mypage-personal-infornation">
+                  <section class="mypage-personal-infornation  tab-content" data-tabcontent="tab_information">
                     <form class="register-container mypage-container">
                       <div class="register-container-inn mt-30">
                         <div class="register-caution">
@@ -278,58 +281,58 @@
                                 <option value="2021">2021</option>
                               </select>
                             </span>
-                           <span class="select-area">
-                             <select class="dob-month" id="month" name="mm">
-                               <option value="01">01</option>
-                               <option value="02">02</option>
-                               <option value="03">03</option>
-                               <option value="04">04</option>
-                               <option value="05">05</option>
-                               <option value="06">06</option>
-                               <option value="07">07</option>
-                               <option value="08">08</option>
-                               <option value="09">09</option>
-                               <option value="10">10</option>
-                               <option value="11">11</option>
-                               <option value="12">12</option>
-                             </select>
-                           </span>
-                           <span class="select-area">
-                             <select class="dob-day" id="day" name="dd" >
-                               <option value="01">01</option>
-                               <option value="02">02</option>
-                               <option value="03">03</option>
-                               <option value="04">04</option>
-                               <option value="05">05</option>
-                               <option value="06">06</option>
-                               <option value="07">07</option>
-                               <option value="08">08</option>
-                               <option value="09">09</option>
-                               <option value="10">10</option>
-                               <option value="11">11</option>
-                               <option value="12">12</option>
-                               <option value="13">13</option>
-                               <option value="14">14</option>
-                               <option value="15">15</option>
-                               <option value="16">16</option>
-                               <option value="17">17</option>
-                               <option value="18">18</option>
-                               <option value="19">19</option>
-                               <option value="10">20</option>
-                               <option value="21">21</option>
-                               <option value="22">22</option>
-                               <option value="23">23</option>
-                               <option value="24">24</option>
-                               <option value="25">25</option>
-                               <option value="26">26</option>
-                               <option value="27">27</option>
-                               <option value="28">28</option>
-                               <option value="29">29</option>
-                               <option value="30">30</option>
-                               <option value="31">31</option>
-                             </select>
-                           </span>
-                         </dd>
+                            <span class="select-area">
+                              <select class="dob-month" id="month" name="mm">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                              </select>
+                            </span>
+                            <span class="select-area">
+                              <select class="dob-day" id="day" name="dd">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="10">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                              </select>
+                            </span>
+                          </dd>
                           <dt>性別</dt>
                           <dd class="select">
                             <select name="" class="select-value">
@@ -380,6 +383,112 @@
                         </div>
                       </div>
                     </form>
+                  </section>
+                  <section class="mypage-personal-payment tab-content" data-tabcontent="tab_payment">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>ご請求番号</th>
+                          <th>ご請求日</th>
+                          <th>お支払期限</th>
+                          <th>ご請求金額</th>
+                          <th>お支払</th>
+                          <th>備考</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>0123456789</td>
+                          <td>2021/01/01</td>
+                          <td>2021/01/30</td>
+                          <td>9,999円</td>
+                          <td><a href="" rel="alternate" target="_blank" class="unpaid">お支払いをする</a></td>
+                          <td>入会金</td>
+                        </tr>
+                        <tr>
+                          <td>0123456789</td>
+                          <td>2021/01/01</td>
+                          <td>2021/01/30</td>
+                          <td>9,999円</td>
+                          <td>お支払済み</td>
+                          <td>年会費</td>
+                        </tr>
+                        <tr>
+                          <td>0123456789</td>
+                          <td>2021/01/01</td>
+                          <td>2021/01/30</td>
+                          <td>9,999円</td>
+                          <td>お支払済み</td>
+                          <td>年会費</td>
+                        </tr>
+                        <tr>
+                          <td>0123456789</td>
+                          <td>2021/01/01</td>
+                          <td>2021/01/30</td>
+                          <td>9,999円</td>
+                          <td>お支払済み</td>
+                          <td>年会費</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+                  <section class="mypage-personal-card tab-content" data-tabcontent="tab_card">
+                    <div class="mypage-personal-card-ttl">
+                      <h3>Visa ****1234</h3>
+                    </div>
+                    <div class="mypage-personal-card-txt">
+                      <p>
+                        <span>山田太郎</span>
+                        <span>有効期限は2022/09/16です</span>
+                      </p>
+                      <div class="more-btn more-btn02">
+                        <a href="member-news-02.html" rel="alternate" target="_blank">
+                          編集
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="mypage-personal-points tab-content" data-tabcontent="tab_unit">
+                    <div class="mypage-personal-points-ttl">
+                      <h3>現在の取得済みDMIL単位（2021）</h3>
+                      <h4><span>300 </span>単位</h4>
+                    </div>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>日付</th>
+                          <th>内容</th>
+                          <th>参加状況</th>
+                          <th>取得単位</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>2021/01/01</td>
+                          <td>第3回 医療DX講演会</td>
+                          <td>参加</td>
+                          <td>100</td>
+                        </tr>
+                        <tr>
+                          <td>2021/01/01</td>
+                          <td>第3回 医療DX講演会</td>
+                          <td>参加</td>
+                          <td>100</td>
+                        </tr>
+                        <tr>
+                          <td>2021/01/01</td>
+                          <td>第3回 医療DX講演会</td>
+                          <td>参加</td>
+                          <td>50</td>
+                        </tr>
+                        <tr>
+                          <td>2021/01/01</td>
+                          <td>第3回 医療DX講演会</td>
+                          <td>参加</td>
+                          <td>50</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </section>
                 </div>
               </div>

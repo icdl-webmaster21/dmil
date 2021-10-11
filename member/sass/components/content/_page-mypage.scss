@@ -46,9 +46,17 @@
             }
 
             &:hover,
-            &.active {
+            &.tab-active {
               color: #fff;
               background: #11A69C;
+
+              @include mqSp() {
+                border-radius: unset;
+                -webkit-border-radius: unset;
+                -moz-border-radius: unset;
+                -ms-border-radius: unset;
+                -o-border-radius: unset;
+              }
             }
 
             &.creditCard-infornation {
@@ -141,53 +149,56 @@
     }
 
     &-personal-payment {
-      padding: 30px 25px 55px;
       overflow: hidden;
       border-radius: 30px;
       background: #fff;
       box-sizing: border-box;
       margin: 30px 0;
+      overflow: auto;
+      &-inn {
+        padding: 30px 25px 55px;
+        width: 940px;
+        table {
+          width: 100%;
 
-      table {
-        width: 100%;
+          thead {
+            background: #F6F7F9;
 
-        thead {
-          background: #F6F7F9;
+            th {
+              font-size: 14px;
+              text-align: center;
+              padding: 12px;
 
-          th {
-            font-size: 14px;
-            text-align: center;
-            padding: 12px;
+              &:first-child {
+                overflow: hidden;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+              }
 
-            &:first-child {
-              overflow: hidden;
-              border-top-left-radius: 15px;
-              border-bottom-left-radius: 15px;
-            }
-
-            &:last-child {
-              overflow: hidden;
-              border-top-right-radius: 15px;
-              border-bottom-right-radius: 15px;
+              &:last-child {
+                overflow: hidden;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+              }
             }
           }
-        }
 
-        tbody {
-          td {
-            font-size: 14px;
-            text-align: center;
-            padding: 30px 12px;
-            border-bottom: 1px solid #EBEBEB;
+          tbody {
+            td {
+              font-size: 14px;
+              text-align: center;
+              padding: 30px 12px;
+              border-bottom: 1px solid #EBEBEB;
 
-            .unpaid {
-              font-weight: bold;
-              color: #11A69C;
-            }
+              .unpaid {
+                font-weight: bold;
+                color: #11A69C;
+              }
 
-            a {
-              &:hover {
-                text-decoration: underline;
+              a {
+                &:hover {
+                  text-decoration: underline;
+                }
               }
             }
           }
@@ -245,9 +256,11 @@
           -moz-appearance: none;
           -webkit-appearance: none;
           font-size: 14px;
+
           @include mqSp() {
             font-size: 16px;
           }
+
           &:focus {
             outline: none;
           }
@@ -347,7 +360,7 @@
 
               @include mqSp() {
                 width: 100%;
-                padding: 12px 15px; 
+                padding: 12px 15px;
               }
             }
           }
@@ -370,7 +383,7 @@
     }
 
     &-personal-points {
-      padding: 30px 25px 55px;
+      padding: 30px 35px 55px;
       overflow: hidden;
       border-radius: 30px;
       background: #fff;
@@ -493,6 +506,7 @@
     margin: auto;
     padding: 47px 80px;
     text-align: center;
+
     @include mqSp() {
       padding: 30px 10px 35px;
     }

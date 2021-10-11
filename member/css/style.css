@@ -116,7 +116,8 @@ img {
   padding: 37px 50px 20px;
   overflow: hidden;
   margin-left: 260px;
-  margin-top: 99.9219px; }
+  margin-top: 99.9219px;
+  min-height: calc(100vh - 132px); }
   @media screen and (max-width: 1260px) {
     .site-main .cd-content-wrapper {
       padding: 0px 20px;
@@ -260,6 +261,12 @@ img {
         .pagination-pagenavi span:hover.previouspostslink svg #next,
         .pagination-pagenavi span:hover.nextpostslink svg #next {
           fill: #000 !important; }
+
+.tab-hide {
+  display: none; }
+
+.tabcontent-active {
+  display: block; }
 
 .mx-unset {
   max-width: unset !important; }
@@ -1967,9 +1974,16 @@ aside.active-aside {
           padding-left: 15px; } }
       .register-content .mypage-wrap-list ul li:last-child {
         margin-right: 0; }
-      .register-content .mypage-wrap-list ul li:hover, .register-content .mypage-wrap-list ul li.active {
+      .register-content .mypage-wrap-list ul li:hover, .register-content .mypage-wrap-list ul li.tab-active {
         color: #fff;
         background: #11A69C; }
+        @media screen and (max-width: 1260px) {
+          .register-content .mypage-wrap-list ul li:hover, .register-content .mypage-wrap-list ul li.tab-active {
+            border-radius: unset;
+            -webkit-border-radius: unset;
+            -moz-border-radius: unset;
+            -ms-border-radius: unset;
+            -o-border-radius: unset; } }
       .register-content .mypage-wrap-list ul li.creditCard-infornation {
         width: 25%;
         padding: 10px 5px; }
@@ -2031,38 +2045,41 @@ aside.active-aside {
     font-weight: 600;
     color: #11A69C; }
 .register-content .mypage-personal-payment {
-  padding: 30px 25px 55px;
   overflow: hidden;
   border-radius: 30px;
   background: #fff;
   box-sizing: border-box;
-  margin: 30px 0; }
-  .register-content .mypage-personal-payment table {
-    width: 100%; }
-    .register-content .mypage-personal-payment table thead {
-      background: #F6F7F9; }
-      .register-content .mypage-personal-payment table thead th {
+  margin: 30px 0;
+  overflow: auto; }
+  .register-content .mypage-personal-payment-inn {
+    padding: 30px 25px 55px;
+    width: 940px; }
+    .register-content .mypage-personal-payment-inn table {
+      width: 100%; }
+      .register-content .mypage-personal-payment-inn table thead {
+        background: #F6F7F9; }
+        .register-content .mypage-personal-payment-inn table thead th {
+          font-size: 14px;
+          text-align: center;
+          padding: 12px; }
+          .register-content .mypage-personal-payment-inn table thead th:first-child {
+            overflow: hidden;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px; }
+          .register-content .mypage-personal-payment-inn table thead th:last-child {
+            overflow: hidden;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px; }
+      .register-content .mypage-personal-payment-inn table tbody td {
         font-size: 14px;
         text-align: center;
-        padding: 12px; }
-        .register-content .mypage-personal-payment table thead th:first-child {
-          overflow: hidden;
-          border-top-left-radius: 15px;
-          border-bottom-left-radius: 15px; }
-        .register-content .mypage-personal-payment table thead th:last-child {
-          overflow: hidden;
-          border-top-right-radius: 15px;
-          border-bottom-right-radius: 15px; }
-    .register-content .mypage-personal-payment table tbody td {
-      font-size: 14px;
-      text-align: center;
-      padding: 30px 12px;
-      border-bottom: 1px solid #EBEBEB; }
-      .register-content .mypage-personal-payment table tbody td .unpaid {
-        font-weight: bold;
-        color: #11A69C; }
-      .register-content .mypage-personal-payment table tbody td a:hover {
-        text-decoration: underline; }
+        padding: 30px 12px;
+        border-bottom: 1px solid #EBEBEB; }
+        .register-content .mypage-personal-payment-inn table tbody td .unpaid {
+          font-weight: bold;
+          color: #11A69C; }
+        .register-content .mypage-personal-payment-inn table tbody td a:hover {
+          text-decoration: underline; }
 .register-content .mypage-personal-card {
   padding: 30px 25px 55px;
   overflow: hidden;
@@ -2184,7 +2201,7 @@ aside.active-aside {
     .register-content .mypage-personal-card.mypage-personal-cardEdit .newcard-add .mypage-personal-card-ttl {
       margin-top: 30px; } }
 .register-content .mypage-personal-points {
-  padding: 30px 25px 55px;
+  padding: 30px 35px 55px;
   overflow: hidden;
   border-radius: 30px;
   background: #fff;

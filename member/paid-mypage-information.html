@@ -137,26 +137,30 @@
                 <div class="register-infornation">
                   <div class="mypage-wrap d-fl">
                     <div class="mypage-wrap-list pc">
-                      <ul class="d-fl">
-                        <li class="mypage-options personal-infornation active">会員情報</li>
-                        <li class="mypage-options payment-history">お支払い</li>
-                        <li class="mypage-options creditCard-infornation">クレジットカード設定</li>
-                        <li class="mypage-options personal-points">DMIL単位</li>
+                      <ul class="d-fl tab-list">
+                        <li class="mypage-options personal-infornation tab-menu tab-active" data-tab="tab_information">
+                          会員情報
+                        </li>
+                        <li class="mypage-options payment-history tab-menu" data-tab="tab_payment">お支払い</li>
+                        <li class="mypage-options creditCard-infornation tab-menu" data-tab="tab_card">クレジットカード設定</li>
+                        <li class="mypage-options personal-points tab-menu" data-tab="tab_unit">DMIL単位</li>
                       </ul>
                     </div>
-                    <div class="mypage-wrap-list sp">
+                    <div class="mypage-wrap-list tab-list sp">
                       <div class="select-styled">会員情報</div>
-                      <ul class="select-options" style="display: none;">
-                        <li>単位確認</li>
-                        <li>お支払い</li>
-                        <li>クレジットカード設定</li>
+                      <ul class="select-options tab-list" style="display: none;">
+                        <li class="tab-menu tab-active" data-tab="tab_information">会員情報</li>
+                        <li class="tab-menu" data-tab="tab_payment">お支払い</li>
+                        <li class="tab-menu" data-tab="tab_card">クレジットカード設定</li>
+                        <li class="tab-menu" data-tab="tab_unit">DMIL単位</li>
                       </ul>
                     </div>
                     <div class="mypage-wrap-logout">
                       <a href="#logout" rel="alternate">ログアウト</a>
                     </div>
                   </div>
-                  <section class="mypage-personal-infornation">
+                  <section class="mypage-personal-infornation tab-content tabcontent-active"
+                    data-tabcontent="tab_information">
                     <form class="register-container mypage-container">
                       <div class="register-container-inn mt-30">
                         <dl class="d-fl">
@@ -236,55 +240,57 @@
                       </div>
                     </form>
                   </section>
-                  <section class="mypage-personal-payment" style="display: none;">
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>ご請求番号</th>
-                          <th>ご請求日</th>
-                          <th>お支払期限</th>
-                          <th>ご請求金額</th>
-                          <th>お支払</th>
-                          <th>備考</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>0123456789</td>
-                          <td>2021/01/01</td>
-                          <td>2021/01/30</td>
-                          <td>9,999円</td>
-                          <td><a href="" rel="alternate" target="_blank" class="unpaid">お支払いをする</a></td>
-                          <td>入会金</td>
-                        </tr>
-                        <tr>
-                          <td>0123456789</td>
-                          <td>2021/01/01</td>
-                          <td>2021/01/30</td>
-                          <td>9,999円</td>
-                          <td>お支払済み</td>
-                          <td>年会費</td>
-                        </tr>
-                        <tr>
-                          <td>0123456789</td>
-                          <td>2021/01/01</td>
-                          <td>2021/01/30</td>
-                          <td>9,999円</td>
-                          <td>お支払済み</td>
-                          <td>年会費</td>
-                        </tr>
-                        <tr>
-                          <td>0123456789</td>
-                          <td>2021/01/01</td>
-                          <td>2021/01/30</td>
-                          <td>9,999円</td>
-                          <td>お支払済み</td>
-                          <td>年会費</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <section class="mypage-personal-payment tab-content" data-tabcontent="tab_payment">
+                    <div class="mypage-personal-payment-inn">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>ご請求番号</th>
+                            <th>ご請求日</th>
+                            <th>お支払期限</th>
+                            <th>ご請求金額</th>
+                            <th>お支払</th>
+                            <th>備考</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>0123456789</td>
+                            <td>2021/01/01</td>
+                            <td>2021/01/30</td>
+                            <td>9,999円</td>
+                            <td><a href="" rel="alternate" target="_blank" class="unpaid">お支払いをする</a></td>
+                            <td>入会金</td>
+                          </tr>
+                          <tr>
+                            <td>0123456789</td>
+                            <td>2021/01/01</td>
+                            <td>2021/01/30</td>
+                            <td>9,999円</td>
+                            <td>お支払済み</td>
+                            <td>年会費</td>
+                          </tr>
+                          <tr>
+                            <td>0123456789</td>
+                            <td>2021/01/01</td>
+                            <td>2021/01/30</td>
+                            <td>9,999円</td>
+                            <td>お支払済み</td>
+                            <td>年会費</td>
+                          </tr>
+                          <tr>
+                            <td>0123456789</td>
+                            <td>2021/01/01</td>
+                            <td>2021/01/30</td>
+                            <td>9,999円</td>
+                            <td>お支払済み</td>
+                            <td>年会費</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </section>
-                  <section class="mypage-personal-card" style="display: none;">
+                  <section class="mypage-personal-card tab-content" data-tabcontent="tab_card">
                     <div class="mypage-personal-card-ttl">
                       <h3>Visa ****1234</h3>
                     </div>
@@ -300,47 +306,87 @@
                       </div>
                     </div>
                   </section>
-                  <section class="mypage-personal-points" style="display: none;">
+                  <section class="mypage-personal-points tab-content" data-tabcontent="tab_unit">
                     <div class="mypage-personal-points-ttl">
                       <h3>現在の取得済みDMIL単位（2021）</h3>
                       <h4><span>300 </span>単位</h4>
                     </div>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th>日付</th>
-                          <th>内容</th>
-                          <th>参加状況</th>
-                          <th>取得単位</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>2021/01/01</td>
-                          <td>第3回 医療DX講演会</td>
-                          <td>参加</td>
-                          <td>100</td>
-                        </tr>
-                        <tr>
-                          <td>2021/01/01</td>
-                          <td>第3回 医療DX講演会</td>
-                          <td>参加</td>
-                          <td>100</td>
-                        </tr>
-                        <tr>
-                          <td>2021/01/01</td>
-                          <td>第3回 医療DX講演会</td>
-                          <td>参加</td>
-                          <td>50</td>
-                        </tr>
-                        <tr>
-                          <td>2021/01/01</td>
-                          <td>第3回 医療DX講演会</td>
-                          <td>参加</td>
-                          <td>50</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <div class="pc">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>日付</th>
+                            <th>内容</th>
+                            <th>参加状況</th>
+                            <th>取得単位</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2021/01/01</td>
+                            <td>第3回 医療DX講演会</td>
+                            <td>参加</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>2021/01/01</td>
+                            <td>第3回 医療DX講演会</td>
+                            <td>参加</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>2021/01/01</td>
+                            <td>第3回 医療DX講演会</td>
+                            <td>参加</td>
+                            <td>50</td>
+                          </tr>
+                          <tr>
+                            <td>2021/01/01</td>
+                            <td>第3回 医療DX講演会</td>
+                            <td>参加</td>
+                            <td>50</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="sp">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>日付</th>
+                            <th>内容</th>
+                            <th>参加状況</th>
+                            <th>取得単位</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2021/01/01</td>
+                            <td>第3回 医療DX講演会</td>
+                            <td>参加</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>2021/01/01</td>
+                            <td>第3回 医療DX講演会</td>
+                            <td>参加</td>
+                            <td>100</td>
+                          </tr>
+                          <tr>
+                            <td>2021/01/01</td>
+                            <td>第3回 医療DX講演会</td>
+                            <td>参加</td>
+                            <td>50</td>
+                          </tr>
+                          <tr>
+                            <td>2021/01/01</td>
+                            <td>第3回 医療DX講演会</td>
+                            <td>参加</td>
+                            <td>50</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </section>
                 </div>
               </div>
