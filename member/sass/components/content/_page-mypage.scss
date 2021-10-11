@@ -26,7 +26,7 @@
             font-weight: 600;
             color: #11A69C;
             text-align: center;
-            padding: 10px 2px;
+            padding: 11px 2px 9px;
             box-sizing: border-box;
             border: 2px solid #11A69C;
             border-radius: 10px;
@@ -155,9 +155,16 @@
       box-sizing: border-box;
       margin: 30px 0;
       overflow: auto;
+      @include mqSsp() {
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+      }
       &-inn {
         padding: 30px 25px 55px;
-        width: 940px;
+        width: 1000px;
         table {
           width: 100%;
 
@@ -213,6 +220,13 @@
       background: #fff;
       box-sizing: border-box;
       margin: 30px 0;
+      @include mqSsp() {
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+      }
 
       h3 {
         font-size: 16px;
@@ -235,6 +249,9 @@
 
           a {
             border-radius: 10px;
+            @include mqSp() {
+                padding: 8px;
+            }
 
             &:after {
               content: none;
@@ -368,6 +385,7 @@
         }
 
         .newcard-add {
+          width: 210px;
           @include mqSp() {
             width: 100%;
           }
@@ -474,8 +492,15 @@
         margin: 0 0 2%;
         align-items: center;
         @media(max-width: 750px) {
-          width: 100%;
           margin: 20px 0;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          @include mqSsp() {
+              width: 100%;
+          }
         }
         dt{
           width: 50%;
@@ -486,6 +511,17 @@
           background: #F6F7F9;
           border-radius: 15px;
           overflow: hidden;
+          @include mqSsp() {
+              border-radius: 8px;
+              -webkit-border-radius: 8px;
+              -moz-border-radius: 8px;
+              -ms-border-radius: 8px;
+              -o-border-radius: 8px;
+          }
+          @include mqSsp() {
+              width: 100%;
+          }
+
         }
         dd{
           width: 50%;
@@ -494,6 +530,9 @@
           text-align: center;
           padding: 12px 0;
           overflow: hidden;
+          @include mqSsp() {
+              width: 100%;
+          }
         }
       }
     }
@@ -606,7 +645,7 @@
               p {
                 width: 200px;
                 border-radius: 10px;
-                padding: 15px;
+                padding: 10px 15px;
                 border: 2px solid #F6F7F9;
               }
             }
@@ -623,8 +662,8 @@
             width: 150px;
 
             &:hover {
-              background: #11A69C;
-              color: #fff;
+              background: #fff;
+              color: #11A69C;
             }
           }
         }
@@ -639,6 +678,9 @@
       background: #fff;
       box-sizing: border-box;
       margin: 30px 0;
+      @include mqSp() {
+          border-radius: 10px;  
+       }
 
       h2 {
         font-size: 16px;
@@ -647,12 +689,18 @@
         background: #11a69c;
         color: #fff;
         font-weight: 600;
+        @include mqSp() {
+            padding: 15px;
+        }
       }
 
       &-inn {
         margin: 25px;
         padding-bottom: 24px;
         border-bottom: 1px solid #707070;
+        @include mqSp() {
+            margin: 15px;
+        }
 
         p {
           font-size: 14px;
@@ -716,15 +764,19 @@
         @include mqSp() {
           flex-direction: column;
           align-items: flex-start;
+          margin: 15px 15px 20px;
         }
 
         input {
           position: relative;
           top: 2px;
+          width: 15px;
+          height: 15px;
         }
 
-        lable {
+        label {
           font-size: 14px;
+          padding-left: 8px;
 
         }
 
@@ -737,6 +789,7 @@
           right: -5px;
           position: relative;
           color: #f00;
+          font-size: 10px;
 
         }
       }
@@ -745,7 +798,7 @@
         text-align: left;
 
         @include mqSp() {
-          margin: 50px auto 0px;
+          margin: 30px auto 0px;
         }
 
         button {

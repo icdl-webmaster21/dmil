@@ -87,7 +87,7 @@
           <aside>
             <nav class="main-side-nav">
               <ul>
-                <li><a href="news-02.html" rel="alternate" class="d-fl current"><span class="nav-icon"><img
+                <li><a href="news-02.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
                         src="img/nav/nav-icon-01.png" alt=""></span><span class="nav-link-ttl">DMIL会員へのお知らせ</span><span
                       class="side-nav-notificaiton">99</span></a></li>
                 <li><a href="lecture.html" rel="alternate" class="d-fl"><span class="nav-icon"><img
@@ -335,9 +335,12 @@
                           </dd>
                           <dt>性別</dt>
                           <dd class="select">
-                            <select name="" class="select-value">
-                              <option value="男性">男性</option>
-                            </select>
+                            <span class="select-area">
+                              <select class="dob-day" id="day" name="dd">
+                                <option value="男性">男性</option>
+                                <option value="女性">女性</option>
+                              </select>
+                            </span>
                           </dd>
                           <dt>病院名<span class="required">※</span></dt>
                           <dd>
@@ -353,9 +356,14 @@
                           </dd>
                           <dt>大学生<span class="required">※</span>
                           <dd class="select">
-                            <select name="" class="select-value" required>
-                              <option value="男性">選択してください。</option>
-                            </select>
+                            <span class="select-area">
+                              <select class="dob-day" id="day" name="dd">
+                                <option value="1年">1年</option>
+                                <option value="2年">2年</option>
+                                <option value="3年">3年</option>
+                                <option value="4年">4年</option>
+                              </select>
+                            </span>
                           </dd>
                           <dt>Facebook ID</dt>
                           <dd>

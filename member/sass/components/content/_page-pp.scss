@@ -5,17 +5,17 @@
     border-radius: 30px;
     background: #fff;
     box-sizing: border-box;
-    padding: 50px 40px;
+    padding: 40px 40px 50px;
 
     @include mqSp() {
       padding: 30px 15px 30px;
       margin-top: 7px;
       margin-bottom: 0px;
-      border-radius: 15px;
-      -webkit-border-radius: 15px;
-      -moz-border-radius: 15px;
-      -ms-border-radius: 15px;
-      -o-border-radius: 15px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
     }
 
     &-text {
@@ -38,16 +38,16 @@
       p {
         font-size: 14px;
         margin: 20px 0 50px;
-        line-height: 1.6;
+        line-height: 2.2;
 
         @include mqSp() {
-
-          line-height: 2;
+          margin: 20px 0 35px;
+          line-height: 2.2;
         }
 
         &.float-right {
           text-align: right;
-          margin: 0;
+          margin: 0 0 15px;
 
           &.float-right-last {
             margin-top: -20px;
@@ -72,20 +72,19 @@
       }
 
       ol {
-        margin: 20px 0 50px 40px;
+        margin: 15px 0 40px 40px;
         list-style-type: decimal;
 
         @include mqSp() {
-          margin: 20px 0 35px 22px;
+          margin: 20px 0 35px 18px;
         }
 
         li {
           font-size: 14px;
-          line-height: 1.6;
+          line-height: 2.2;
 
           @include mqSp() {
             margin-bottom: 20px;
-            line-height: 2;
           }
         }
       }
@@ -96,6 +95,8 @@
         li {
           @include mqSp() {
             margin-top: 22px;
+            line-height: 2.2;
+
           }
 
           &:first-child {
@@ -112,10 +113,10 @@
     }
 
     &.pp-wrap-c {
-      padding: 30px 35px;
+      padding: 30px 35px 50px;
 
       @include mqSp() {
-        padding: 30px 15px 30px;
+        padding: 20px 15px 20px;
       }
 
       .pp-wrap-text {
@@ -125,6 +126,7 @@
 
         p {
           margin: 20px 0;
+          line-height: 2.2;
 
           @include mqSp() {
             margin-top: 15px;

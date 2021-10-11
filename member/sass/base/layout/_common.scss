@@ -24,6 +24,7 @@ body {
   background: #F6F7F9;
   line-height: 1.6;
   letter-spacing: 0.08rem;
+  color: #333333;
 }
 
 a,
@@ -99,7 +100,7 @@ img {
 .cd-siteMap.breadcrumbs {
   font-size: 10px;
   color: #999999;
-  margin: 20px auto;
+  margin: 0 auto 20px;
 
   @include mqSp() {
     color: #333333;
@@ -118,7 +119,9 @@ img {
   }
 
   a.home {
-    text-decoration: underline;
+    span{
+      text-decoration: underline;
+    }
   }
 
   span.breadcrumbs-label {
@@ -136,9 +139,9 @@ img {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.1rem;
+  color: #333333;
 
   @include mqSp() {
-    color: #333333;
     font-size: 18px;
   }
 }
@@ -219,7 +222,7 @@ img {
     box-sizing: border-box;
     position: relative;
     opacity: 1;
-    border: 1px solid #11A69C;
+    border: 2px solid #11A69C;
 
     &:hover {
       background: #fff;
@@ -246,16 +249,19 @@ img {
 .pagination-pagenavi {
   padding: 30px 0;
   text-align: center;
+  @include mqSp() {
+      padding: 0 0 15px;
+    }
 
   a,
   span {
     display: inline-block;
     text-decoration: none;
-    padding: 8px;
+    padding: 5px 10px;
     margin: 2px;
     font-size: 14px;
     font-family: "Manrope-SemiBold", sans-serif;
-
+    
     &.current,
     &:hover {
       color: #11A69C;
@@ -264,7 +270,7 @@ img {
       &.previouspostslink,
       &.nextpostslink {
         background: #fff;
-        border-radius: 50%;
+        border-radius: 15px;
 
         svg {
           #next {

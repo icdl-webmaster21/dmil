@@ -23,6 +23,7 @@
     @include mqSp() {
       padding: 25px 0 30px;
       margin: 5px 0px 20px;
+        border-radius: 10px;
     }
 
     li {
@@ -98,11 +99,12 @@
 
       a {
         @include mqSp() {
-          border-radius: 20px;
-          -webkit-border-radius: 20px;
-          -moz-border-radius: 20px;
-          -ms-border-radius: 20px;
-          -o-border-radius: 20px;
+          border-radius: 30px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          -ms-border-radius: 30px;
+          -o-border-radius: 30px;
+          padding: 8px;
         }
       }
     }
@@ -119,6 +121,7 @@
     @include mqSp() {
       margin-top: 5px;
       padding: 0 15px;
+      border-radius: 10px;
     }
 
     form {
@@ -164,7 +167,7 @@
             box-sizing: border-box;
             cursor: pointer;
             display: inline-block;
-            padding: 3px 0 0 35px;
+            padding: 0 0 0 35px;
             position: relative;
             width: auto;
             font-size: 14px;
@@ -226,17 +229,25 @@
           -moz-appearance: none;
           -webkit-appearance: none;
           border: 1px solid #EBEBEB;
-          border-radius: 30px;
+          border-radius: 20px;
           overflow: hidden;
           resize: none;
+          @include mqSp() {
+              border-radius: 10px;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              -o-border-radius: 10px;
+            }
 
           &:focus {
             outline: none;
           }
 
           &::placeholder {
-            font-size: 12px;
+            font-size: 14px;
             color: #999999;
+            
           }
         }
 

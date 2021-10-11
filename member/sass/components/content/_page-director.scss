@@ -5,17 +5,21 @@
     border-radius: 30px;
     background: #fff;
     box-sizing: border-box;
-    padding: 50px 40px;
+    padding: 50px 40px 60px;
 
     @include mqSp() {
       padding: 30px 15px 40px;
+      border-radius: 10px;
     }
 
     &-thumbnail {
       max-width: 500px;
       width: 90%;
       margin: 0 auto 50px;
-
+      iframe{
+          width: 100%;
+          margin: 0;
+      }
       @include mqSp() {
         width: 100%;
         max-width: unset;
@@ -26,12 +30,18 @@
       h2 {
         font-size: 20px;
         font-weight: 600;
+        @include mqSp() {
+            font-size: 19px;
+        }
       }
 
       p {
         font-size: 14px;
         margin: 30px 0 20px;
         line-height: 1.8;
+        @include mqSp() {
+            margin: 20px 0 20px;
+        }
       }
     }
 
@@ -41,8 +51,9 @@
       align-items: center;
 
       @include mqSp() {
+        max-width: 310px;
         flex-direction: column-reverse;
-        margin: 30px auto 0px;
+        margin: 30px 0 0px auto;
       }
 
       &-info {
@@ -69,6 +80,9 @@
       &-img {
         width: 130px;
         margin-left: 30px;
+        @include mqSp() {
+          margin: auto;
+        }
       }
     }
   }
