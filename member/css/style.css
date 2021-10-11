@@ -2263,6 +2263,9 @@ aside.active-aside {
   margin: 30px 0; }
   @media screen and (max-width: 420px) {
     .register-content .mypage-personal-card {
+      padding: 30px 15px 55px; } }
+  @media screen and (max-width: 420px) {
+    .register-content .mypage-personal-card {
       border-radius: 10px;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -2367,7 +2370,8 @@ aside.active-aside {
         color: #333333; }
         @media screen and (max-width: 1024px) {
           .register-content .mypage-personal-card.mypage-personal-cardEdit .oldCard-edit dl dt {
-            width: 100%; } }
+            width: 100%;
+            margin: 5px 0; } }
       .register-content .mypage-personal-card.mypage-personal-cardEdit .oldCard-edit dl dd {
         width: calc(100% - 171px);
         box-sizing: border-box;

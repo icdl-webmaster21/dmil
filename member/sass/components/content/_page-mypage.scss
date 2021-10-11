@@ -221,6 +221,9 @@
       box-sizing: border-box;
       margin: 30px 0;
       @include mqSsp() {
+          padding: 30px 15px 55px;
+      }
+      @include mqSsp() {
           border-radius: 10px;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
@@ -365,6 +368,7 @@
 
               @include mqSp() {
                 width: 100%;
+                margin: 5px 0;
               }
             }
 
