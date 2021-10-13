@@ -1,0 +1,81 @@
+.register-content {
+  .register-infornation {
+      .account-withdral {
+        .mypage-withdral {
+          overflow: hidden;
+          border-radius: 30px;
+          background: #fff;
+          box-sizing: border-box;
+          padding: 45px 30px 50px;
+          margin: 20px 0 30px;
+          @include mqSp() {
+            margin-top: 7px;
+            margin-bottom: 0px;
+            padding: 20px 15px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+          }
+          &-content{
+            &-txt{
+              margin: 36px 0 60px;
+              @include mqSp() {
+                margin: 15px 0;
+              }
+              p{
+                font-size: 16px;
+                line-height: 2.2;
+                letter-spacing: 0.01rem;
+                @include mqSp() {
+                  font-size: 14px;
+                  line-height: 1.8;
+                }
+              }
+            }
+            &-link{
+              max-width: 460px;
+              width: 90%;
+              margin: auto;
+              justify-content: space-between;
+              .more-btn{
+                margin: 15px auto;
+                @include mqSsp() {
+                  width: 100%;
+                  margin: 10px auto;
+                }
+              }
+              a{
+                width: 200px;
+                border-radius: 45px;
+                font-size: 14px;
+                @include mqSp() {
+                  width: 180px;
+                }
+                &:after{
+                  content: none;
+                }
+              }
+            }
+          }
+        }
+        &.free-account-withdral{
+          .mypage-withdral {
+            text-align: center;
+            @include mqSsp() {
+              text-align: left;
+            }
+            &-content{
+              &-txt{
+                margin: 20px 0 30px;
+                @include mqSp() {
+                  margin: 15px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}

@@ -576,7 +576,7 @@
     width: 100%;
     height: 100%;
     background: #00000066;
-    z-index: 999;
+    z-index: 998;
   }
 
   .logout-dialog-box {
@@ -585,13 +585,13 @@
     left: 50%;
     transform: translate(-50%, 0);
     background: #fff;
-    z-index: 1000;
+    z-index: 999;
     overflow: hidden;
     border-radius: 30px;
     max-width: 500px;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 47px 80px;
+    padding: 47px 60px;
     text-align: center;
 
     @include mqSp() {
@@ -602,6 +602,9 @@
       font-size: 14px;
       line-height: 1.5;
       margin: 30px 0;
+      @include mqSp() {
+        margin: 20px 0;
+      }
     }
 
     .more-fl {
@@ -616,7 +619,7 @@
 
         @include mqSp() {
           width: 100%;
-          max-width: 200px;
+          max-width: 180px;
           margin: auto;
         }
 
@@ -633,6 +636,11 @@
           &:after {
             content: none;
           }
+        }
+      }
+      &.more-nfl {
+        .more-btn {
+          margin: auto;
         }
       }
     }
@@ -683,7 +691,7 @@
       box-sizing: border-box;
       margin: 30px 0;
       @include mqSp() {
-          border-radius: 10px;  
+          border-radius: 10px;
        }
 
       h2 {

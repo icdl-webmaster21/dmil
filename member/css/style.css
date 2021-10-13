@@ -2515,20 +2515,20 @@ aside.active-aside {
     width: 100%;
     height: 100%;
     background: #00000066;
-    z-index: 999; }
+    z-index: 998; }
   .modal-logout .logout-dialog-box {
     position: absolute;
     top: 118px;
     left: 50%;
     transform: translate(-50%, 0);
     background: #fff;
-    z-index: 1000;
+    z-index: 999;
     overflow: hidden;
     border-radius: 30px;
     max-width: 500px;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding: 47px 80px;
+    padding: 47px 60px;
     text-align: center; }
     @media screen and (max-width: 1024px) {
       .modal-logout .logout-dialog-box {
@@ -2537,6 +2537,9 @@ aside.active-aside {
       font-size: 14px;
       line-height: 1.5;
       margin: 30px 0; }
+      @media screen and (max-width: 1024px) {
+        .modal-logout .logout-dialog-box p {
+          margin: 20px 0; } }
     .modal-logout .logout-dialog-box .more-fl {
       justify-content: space-between; }
       @media screen and (max-width: 1024px) {
@@ -2547,7 +2550,7 @@ aside.active-aside {
         @media screen and (max-width: 1024px) {
           .modal-logout .logout-dialog-box .more-fl .more-btn {
             width: 100%;
-            max-width: 200px;
+            max-width: 180px;
             margin: auto; } }
         @media screen and (max-width: 1024px) {
           .modal-logout .logout-dialog-box .more-fl .more-btn:last-child {
@@ -2557,6 +2560,8 @@ aside.active-aside {
           letter-spacing: 0.12rem; }
           .modal-logout .logout-dialog-box .more-fl .more-btn a:after {
             content: none; }
+      .modal-logout .logout-dialog-box .more-fl.more-nfl .more-btn {
+        margin: auto; }
 
 .mypage-plan .register-content .register-infornation form .register-container-inn dl dd p {
   width: 200px;
@@ -2821,5 +2826,66 @@ aside.active-aside {
           margin-bottom: 20px; } }
     .pp-content .pp-wrap.pp-wrap-c .pp-wrap-text ol {
       margin: 15px 0 15px 40px; }
+
+.register-content .register-infornation .account-withdral .mypage-withdral {
+  overflow: hidden;
+  border-radius: 30px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 45px 30px 50px;
+  margin: 20px 0 30px; }
+  @media screen and (max-width: 1024px) {
+    .register-content .register-infornation .account-withdral .mypage-withdral {
+      margin-top: 7px;
+      margin-bottom: 0px;
+      padding: 20px 15px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px; } }
+  .register-content .register-infornation .account-withdral .mypage-withdral-content-txt {
+    margin: 36px 0 60px; }
+    @media screen and (max-width: 1024px) {
+      .register-content .register-infornation .account-withdral .mypage-withdral-content-txt {
+        margin: 15px 0; } }
+    .register-content .register-infornation .account-withdral .mypage-withdral-content-txt p {
+      font-size: 16px;
+      line-height: 2.2;
+      letter-spacing: 0.01rem; }
+      @media screen and (max-width: 1024px) {
+        .register-content .register-infornation .account-withdral .mypage-withdral-content-txt p {
+          font-size: 14px;
+          line-height: 1.8; } }
+  .register-content .register-infornation .account-withdral .mypage-withdral-content-link {
+    max-width: 460px;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between; }
+    .register-content .register-infornation .account-withdral .mypage-withdral-content-link .more-btn {
+      margin: 15px auto; }
+      @media screen and (max-width: 420px) {
+        .register-content .register-infornation .account-withdral .mypage-withdral-content-link .more-btn {
+          width: 100%;
+          margin: 10px auto; } }
+    .register-content .register-infornation .account-withdral .mypage-withdral-content-link a {
+      width: 200px;
+      border-radius: 45px;
+      font-size: 14px; }
+      @media screen and (max-width: 1024px) {
+        .register-content .register-infornation .account-withdral .mypage-withdral-content-link a {
+          width: 180px; } }
+      .register-content .register-infornation .account-withdral .mypage-withdral-content-link a:after {
+        content: none; }
+.register-content .register-infornation .account-withdral.free-account-withdral .mypage-withdral {
+  text-align: center; }
+  @media screen and (max-width: 420px) {
+    .register-content .register-infornation .account-withdral.free-account-withdral .mypage-withdral {
+      text-align: left; } }
+  .register-content .register-infornation .account-withdral.free-account-withdral .mypage-withdral-content-txt {
+    margin: 20px 0 30px; }
+    @media screen and (max-width: 1024px) {
+      .register-content .register-infornation .account-withdral.free-account-withdral .mypage-withdral-content-txt {
+        margin: 15px 0; } }
 
 /*# sourceMappingURL=style.css.map */
